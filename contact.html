@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Meridian Energy Management | Cape Town</title>
+<meta name="description" content="Contact Meridian Energy Management in Cape Town for energy procurement, fuel supply, strategic sourcing and supply solutions.">
+<meta name="author" content="Meridian Energy Management">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--black:#07090a;
+--black2:#0d1012;
+--black3:#14181b;
+--black4:#1c2124;
+--white:#f5f4f0;
+--grey:#969da0;
+--grey-light:#c8cccd;
+--gold:#d6a545;
+--gold-light:#edc66d;
+--gold-dark:#9c7425;
+--border:rgba(255,255,255,.09);
+--gold-border:rgba(214,165,69,.30);
+--max:1240px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+background:var(--black);
+color:var(--white);
+font-family:"DM Sans",sans-serif;
+line-height:1.65;
+overflow-x:hidden;
+}
+
+a{
+color:inherit;
+text-decoration:none;
+}
+
+button,input,textarea{
+font:inherit;
+}
+
+.container{
+width:min(var(--max),calc(100% - 48px));
+margin:auto;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:rgba(7,9,10,.87);
+backdrop-filter:blur(18px);
+border-bottom:1px solid var(--border);
+transition:.3s;
+}
+
+header.scrolled{
+background:rgba(7,9,10,.97);
+box-shadow:0 10px 40px rgba(0,0,0,.35);
+}
+
+.nav{
+height:82px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:13px;
+}
+
+.brand-mark{
+width:40px;
+height:40px;
+border:1px solid var(--gold);
+display:grid;
+place-items:center;
+color:var(--gold);
+font-family:Manrope,sans-serif;
+font-weight:800;
+font-size:17px;
+position:relative;
+}
+
+.brand-mark:after{
+content:"";
+position:absolute;
+width:9px;
+height:9px;
+background:var(--gold);
+right:-4px;
+bottom:-4px;
+}
+
+.brand-name{
+font-family:Manrope,sans-serif;
+font-weight:800;
+font-size:14px;
+letter-spacing:2px;
+}
+
+.brand-name span{
+display:block;
+font-size:8px;
+color:var(--gold);
+letter-spacing:3px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+align-items:center;
+}
+
+nav a{
+font-size:13px;
+color:var(--grey-light);
+transition:.25s;
+}
+
+nav a:hover,
+nav a.active{
+color:var(--gold-light);
+}
+
+.nav-cta{
+border:1px solid var(--gold);
+padding:11px 17px;
+color:var(--white)!important;
+}
+
+.nav-cta:hover{
+background:var(--gold);
+color:var(--black)!important;
+}
+
+.menu-toggle{
+display:none;
+background:none;
+border:0;
+color:var(--white);
+font-size:26px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+min-height:620px;
+padding:170px 0 100px;
+display:flex;
+align-items:center;
+position:relative;
+overflow:hidden;
+background:
+linear-gradient(90deg,rgba(7,9,10,.98),rgba(7,9,10,.82),rgba(7,9,10,.38)),
+linear-gradient(0deg,var(--black),transparent 60%),
+url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2200&q=85") center/cover;
+}
+
+.hero:after{
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(90deg,rgba(214,165,69,.035) 1px,transparent 1px),
+linear-gradient(rgba(214,165,69,.035) 1px,transparent 1px);
+background-size:80px 80px;
+pointer-events:none;
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+max-width:850px;
+}
+
+.eyebrow{
+color:var(--gold);
+font-size:11px;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:4px;
+margin-bottom:20px;
+}
+
+h1,h2,h3,h4{
+font-family:Manrope,sans-serif;
+line-height:1.08;
+}
+
+h1{
+font-size:clamp(50px,7vw,92px);
+letter-spacing:-4px;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:18px;
+color:var(--grey-light);
+max-width:700px;
+}
+
+.hero-strip{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+z-index:2;
+border-top:1px solid var(--border);
+background:rgba(7,9,10,.62);
+}
+
+.strip-inner{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+
+.strip-inner div{
+padding:17px 20px;
+border-right:1px solid var(--border);
+font-size:10px;
+color:var(--grey);
+text-transform:uppercase;
+letter-spacing:2px;
+}
+
+.strip-inner div:first-child{
+color:var(--gold-light);
+}
+
+/* SECTIONS */
+
+section{
+padding:110px 0;
+border-bottom:1px solid var(--border);
+}
+
+.section-head{
+display:flex;
+justify-content:space-between;
+align-items:flex-end;
+gap:50px;
+margin-bottom:55px;
+}
+
+.section-head h2{
+font-size:clamp(38px,4vw,58px);
+letter-spacing:-2.5px;
+max-width:700px;
+}
+
+.section-head p{
+max-width:440px;
+color:var(--grey);
+font-size:15px;
+}
+
+/* CONTACT GRID */
+
+.contact-grid{
+display:grid;
+grid-template-columns:.85fr 1.15fr;
+gap:70px;
+align-items:start;
+}
+
+.contact-info{
+display:flex;
+flex-direction:column;
+gap:1px;
+background:var(--border);
+border:1px solid var(--border);
+}
+
+.contact-item{
+background:var(--black2);
+padding:32px;
+min-height:155px;
+}
+
+.contact-item .icon{
+width:38px;
+height:38px;
+border:1px solid var(--gold-border);
+display:grid;
+place-items:center;
+color:var(--gold);
+margin-bottom:22px;
+font-size:14px;
+}
+
+.contact-item small{
+display:block;
+color:var(--gold);
+font-size:10px;
+font-weight:700;
+letter-spacing:2px;
+text-transform:uppercase;
+margin-bottom:7px;
+}
+
+.contact-item strong{
+font-family:Manrope,sans-serif;
+font-size:18px;
+display:block;
+}
+
+.contact-item p,
+.contact-item a{
+font-size:13px;
+color:var(--grey-light);
+}
+
+.contact-item a:hover{
+color:var(--gold-light);
+}
+
+/* FORM */
+
+.form-box{
+border:1px solid var(--border);
+background:var(--black2);
+padding:45px;
+}
+
+.form-box h2{
+font-size:32px;
+letter-spacing:-1.5px;
+margin-bottom:10px;
+}
+
+.form-intro{
+color:var(--grey);
+font-size:14px;
+margin-bottom:35px;
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.field{
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+.field.full{
+grid-column:1/-1;
+}
+
+label{
+font-size:10px;
+text-transform:uppercase;
+letter-spacing:2px;
+color:var(--grey-light);
+}
+
+input,
+textarea,
+select{
+width:100%;
+border:1px solid var(--border);
+background:var(--black);
+color:var(--white);
+padding:14px 15px;
+outline:none;
+transition:.25s;
+border-radius:0;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+border-color:var(--gold);
+box-shadow:0 0 0 2px rgba(214,165,69,.07);
+}
+
+textarea{
+min-height:150px;
+resize:vertical;
+}
+
+select{
+appearance:none;
+cursor:pointer;
+}
+
+select option{
+background:var(--black2);
+}
+
+.form-submit{
+margin-top:25px;
+display:flex;
+justify-content:flex-end;
+}
+
+.button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:15px 23px;
+border:1px solid var(--gold);
+text-transform:uppercase;
+font-size:11px;
+font-weight:700;
+letter-spacing:1.7px;
+white-space:nowrap;
+transition:.3s;
+background:var(--gold);
+color:var(--black);
+cursor:pointer;
+}
+
+.button:hover{
+background:var(--gold-light);
+}
+
+/* LOCATION */
+
+.location{
+background:var(--black2);
+}
+
+.location-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:stretch;
+}
+
+.location-copy h2{
+font-size:clamp(38px,4vw,55px);
+letter-spacing:-2px;
+margin-bottom:22px;
+}
+
+.location-copy>p{
+color:var(--grey-light);
+max-width:570px;
+margin-bottom:30px;
+}
+
+.address{
+border-top:1px solid var(--border);
+border-bottom:1px solid var(--border);
+padding:22px 0;
+margin-bottom:25px;
+}
+
+.address span{
+display:block;
+color:var(--gold);
+font-size:10px;
+text-transform:uppercase;
+letter-spacing:2px;
+margin-bottom:7px;
+}
+
+.address strong{
+font-family:Manrope,sans-serif;
+font-size:18px;
+}
+
+.location-visual{
+min-height:420px;
+border:1px solid var(--border);
+position:relative;
+overflow:hidden;
+background:
+linear-gradient(0deg,rgba(7,9,10,.88),rgba(7,9,10,.15)),
+url("https://images.unsplash.com/photo-1521292270410-a8c4d716d518?auto=format&fit=crop&w=1500&q=85") center/cover;
+}
+
+.location-marker{
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+width:70px;
+height:70px;
+border:1px solid var(--gold);
+display:grid;
+place-items:center;
+background:rgba(7,9,10,.86);
+color:var(--gold);
+font-family:Manrope,sans-serif;
+font-weight:800;
+}
+
+.location-label{
+position:absolute;
+bottom:25px;
+left:25px;
+}
+
+.location-label small{
+display:block;
+color:var(--gold);
+font-size:9px;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+.location-label strong{
+font-family:Manrope,sans-serif;
+font-size:21px;
+}
+
+/* CTA */
+
+.cta{
+background:
+radial-gradient(circle at 75% 45%,rgba(214,165,69,.12),transparent 30%),
+var(--black);
+}
+
+.cta-box{
+border:1px solid var(--gold-border);
+padding:60px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+}
+
+.cta-box h2{
+font-size:clamp(37px,4vw,58px);
+letter-spacing:-2px;
+max-width:720px;
+}
+
+.cta-box p{
+color:var(--grey);
+max-width:620px;
+margin-top:15px;
+}
+
+footer{
+padding:70px 0 30px;
+background:#050708;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.5fr 1fr 1fr 1fr;
+gap:50px;
+padding-bottom:60px;
+border-bottom:1px solid var(--border);
+}
+
+.footer-brand p{
+color:var(--grey);
+font-size:13px;
+max-width:370px;
+margin-top:20px;
+}
+
+footer h4{
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:2px;
+margin-bottom:18px;
+}
+
+footer ul{
+list-style:none;
+}
+
+footer li{
+margin-bottom:9px;
+}
+
+footer li a{
+color:var(--grey);
+font-size:13px;
+transition:.2s;
+}
+
+footer li a:hover{
+color:var(--gold-light);
+}
+
+.footer-bottom{
+padding-top:25px;
+display:flex;
+justify-content:space-between;
+gap:30px;
+font-size:11px;
+color:#687074;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(25px);
+transition:opacity .8s ease,transform .8s ease;
+}
+
+.reveal.visible{
+opacity:1;
+transform:none;
+}
+
+.success{
+display:none;
+margin-top:20px;
+border:1px solid rgba(214,165,69,.35);
+background:rgba(214,165,69,.06);
+padding:15px;
+font-size:13px;
+color:var(--gold-light);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1050px){
+
+nav ul{gap:14px}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.location-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:800px){
+
+.container{
+width:min(var(--max),calc(100% - 32px));
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+position:absolute;
+top:82px;
+left:0;
+width:100%;
+background:rgba(7,9,10,.98);
+border-bottom:1px solid var(--border);
+}
+
+nav.open{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+align-items:stretch;
+padding:20px;
+gap:0;
+}
+
+nav a{
+display:block;
+padding:14px 5px;
+border-bottom:1px solid var(--border);
+}
+
+.nav-cta{
+margin-top:10px;
+text-align:center;
+}
+
+.hero{
+min-height:680px;
+}
+
+.strip-inner{
+grid-template-columns:repeat(2,1fr);
+}
+
+.strip-inner div{
+padding:12px;
+}
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+.field.full{
+grid-column:auto;
+}
+
+.cta-box{
+padding:35px 25px;
+flex-direction:column;
+align-items:flex-start;
+}
+
+.footer-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+section{
+padding:80px 0;
+}
+
+.section-head{
+display:block;
+margin-bottom:40px;
+}
+
+.section-head p{
+margin-top:20px;
+}
+
+h1{
+font-size:48px;
+letter-spacing:-2.5px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.form-box{
+padding:28px 22px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.footer-bottom{
+flex-direction:column;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header id="header">
+
+<div class="container nav">
+
+<a href="index.html" class="brand">
+<div class="brand-mark">M</div>
+<div class="brand-name">
+MERIDIAN
+<span>ENERGY MANAGEMENT</span>
+</div>
+</a>
+
+<button class="menu-toggle" id="menuToggle">☰</button>
+
+<nav id="mainNav">
+<ul>
+<li><a href="about.html">About</a></li>
+<li><a href="solutions.html">Solutions</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="industries.html">Industries</a></li>
+<li><a href="process.html">Process</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+<li><a href="quote.html" class="nav-cta">Request a Quote</a></li>
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-content reveal">
+
+<div class="eyebrow">Contact Meridian</div>
+
+<h1>
+Let's discuss your<br>
+energy <span style="color:var(--gold)">requirement.</span>
+</h1>
+
+<p>
+Whether you require fuel, energy products, strategic procurement
+support or a tailored supply solution, our team is ready to
+understand your requirement.
+</p>
+
+</div>
+
+<div class="hero-strip">
+
+<div class="container strip-inner">
+<div>Cape Town</div>
+<div>Southern Africa</div>
+<div>Global Sourcing</div>
+<div>Energy Procurement</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+
+<div class="eyebrow">Get In Touch</div>
+
+<h2>
+Start the conversation.
+</h2>
+
+</div>
+
+<p>
+Send us your requirement or contact Meridian directly using the
+details below.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+<div class="contact-info reveal">
+
+<div class="contact-item">
+
+<div class="icon">☎</div>
+
+<small>Telephone</small>
+
+<a href="tel:0847345588">
+<strong>084 734 5588</strong>
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="icon">@</div>
+
+<small>Email</small>
+
+<a href="mailto:trading@meridianenergymanagement.com">
+trading@meridianenergymanagement.com
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="icon">M</div>
+
+<small>Head Office</small>
+
+<strong>106 Adderley Street</strong>
+
+<p>Cape Town, 8001<br>South Africa</p>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="icon">→</div>
+
+<small>Business Enquiries</small>
+
+<p>
+For procurement, supply, commercial or partnership enquiries,
+please contact us directly or submit the enquiry form.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="form-box reveal">
+
+<h2>Send an Enquiry</h2>
+
+<p class="form-intro">
+Provide the details below and Meridian will review your enquiry.
+</p>
+
+<form id="contactForm">
+
+<div class="form-grid">
+
+<div class="field">
+
+<label for="name">Full Name</label>
+
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Your name"
+required
+>
+
+</div>
+
+
+<div class="field">
+
+<label for="company">Company</label>
+
+<input
+type="text"
+id="company"
+name="company"
+placeholder="Company name"
+>
+
+</div>
+
+
+<div class="field">
+
+<label for="email">Email Address</label>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="you@company.com"
+required
+>
+
+</div>
+
+
+<div class="field">
+
+<label for="phone">Phone</label>
+
+<input
+type="tel"
+id="phone"
+name="phone"
+placeholder="Phone number"
+>
+
+</div>
+
+
+<div class="field full">
+
+<label for="subject">Enquiry Type</label>
+
+<select id="subject" name="subject">
+
+<option value="General Enquiry">General Enquiry</option>
+<option value="Energy Procurement">Energy Procurement</option>
+<option value="Fuel Supply">Fuel Supply</option>
+<option value="Product Enquiry">Product Enquiry</option>
+<option value="Strategic Sourcing">Strategic Sourcing</option>
+<option value="Partnership">Partnership</option>
+<option value="Other">Other</option>
+
+</select>
+
+</div>
+
+
+<div class="field full">
+
+<label for="message">Message</label>
+
+<textarea
+id="message"
+name="message"
+placeholder="Tell us about your requirement..."
+required
+></textarea>
+
+</div>
+
+</div>
+
+
+<div class="form-submit">
+
+<button type="submit" class="button">
+Send Enquiry →
+</button>
+
+</div>
+
+<div class="success" id="successMessage">
+Your email application should now open with the enquiry prepared
+for Meridian Energy Management.
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="location">
+
+<div class="container location-grid">
+
+<div class="location-copy reveal">
+
+<div class="eyebrow">Cape Town • South Africa</div>
+
+<h2>
+Based in South Africa. Connected to global energy markets.
+</h2>
+
+<p>
+Meridian Energy Management operates from Cape Town, South Africa,
+with a procurement and supply approach designed to connect local
+requirements with international energy markets.
+</p>
+
+<div class="address">
+
+<span>Head Office</span>
+
+<strong>
+106 Adderley Street<br>
+Cape Town, 8001<br>
+South Africa
+</strong>
+
+</div>
+
+<a href="quote.html" class="button">
+Submit A Requirement →
+</a>
+
+</div>
+
+
+<div class="location-visual reveal">
+
+<div class="location-marker">M</div>
+
+<div class="location-label">
+
+<small>Meridian Energy Management</small>
+
+<strong>Cape Town</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box reveal">
+
+<div>
+
+<div class="eyebrow">Need A Specific Product?</div>
+
+<h2>
+Submit a detailed procurement request.
+</h2>
+
+<p>
+If you already know the product, quantity, destination and timeline,
+go directly to our Request a Quote page.
+</p>
+
+</div>
+
+<a href="quote.html" class="button">
+Request a Quote →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-brand">
+
+<a href="index.html" class="brand">
+
+<div class="brand-mark">M</div>
+
+<div class="brand-name">
+MERIDIAN
+<span>ENERGY MANAGEMENT</span>
+</div>
+
+</a>
+
+<p>
+Strategic energy procurement and supply solutions connecting
+qualified buyers with established global energy markets.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Company</h4>
+
+<ul>
+<li><a href="about.html">About Meridian</a></li>
+<li><a href="solutions.html">Solutions</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="industries.html">Industries</a></li>
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Explore</h4>
+
+<ul>
+<li><a href="process.html">Our Process</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="quote.html">Request a Quote</a></li>
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Contact</h4>
+
+<ul>
+<li><a href="tel:0847345588">084 734 5588</a></li>
+<li><a href="mailto:trading@meridianenergymanagement.com">trading@meridianenergymanagement.com</a></li>
+<li>106 Adderley Street</li>
+<li>Cape Town, South Africa</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<div>
+© <span id="year"></span> Meridian Energy Management. All rights reserved.
+</div>
+
+<div>
+<a href="privacy.html">Privacy</a>
+&nbsp; / &nbsp;
+<a href="terms.html">Terms</a>
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+const header=document.getElementById("header");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>30){
+header.classList.add("scrolled");
+}else{
+header.classList.remove("scrolled");
+}
+
+});
+
+
+const menuToggle=document.getElementById("menuToggle");
+const mainNav=document.getElementById("mainNav");
+
+menuToggle.addEventListener("click",()=>{
+mainNav.classList.toggle("open");
+});
+
+
+document.querySelectorAll("#mainNav a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+mainNav.classList.remove("open");
+});
+
+});
+
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("visible");
+observer.unobserve(entry.target);
+
+}
+
+});
+
+},{threshold:.12});
+
+
+document.querySelectorAll(".reveal").forEach(el=>{
+observer.observe(el);
+});
+
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const name=document.getElementById("name").value;
+const company=document.getElementById("company").value;
+const email=document.getElementById("email").value;
+const phone=document.getElementById("phone").value;
+const subject=document.getElementById("subject").value;
+const message=document.getElementById("message").value;
+
+const body=
+"Name: "+name+"\n"+
+"Company: "+company+"\n"+
+"Email: "+email+"\n"+
+"Phone: "+phone+"\n\n"+
+"Enquiry Type: "+subject+"\n\n"+
+"Message:\n"+message;
+
+const mailto=
+"mailto:trading@meridianenergymanagement.com"+
+"?subject="+encodeURIComponent("Website Enquiry - "+subject)+
+"&body="+encodeURIComponent(body);
+
+window.location.href=mailto;
+
+document.getElementById("successMessage").style.display="block";
+
+});
+
+</script>
+
+</body>
+</html>
