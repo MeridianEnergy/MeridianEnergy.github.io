@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Energy Products | Meridian Energy Management</title>
+  <meta name="description" content="Meridian Energy Management sources and supplies EN590 10ppm Diesel, Jet A1 Aviation Fuel, D6 Virgin Fuel Oil, Crude Oil, LNG and LPG through strategic global procurement networks.">
+  <meta name="keywords" content="EN590 10ppm diesel South Africa, Jet A1 South Africa, D6 fuel oil, crude oil procurement, LNG LPG South Africa, fuel supplier South Africa, energy procurement">
+  <meta name="author" content="Meridian Energy Management">
+
+  <meta property="og:title" content="Energy Products | Meridian Energy Management">
+  <meta property="og:description" content="Strategic sourcing and supply of refined petroleum products, crude oil, LNG and LPG.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black:#07090a;
+      --black2:#0d1012;
+      --black3:#14181b;
+      --black4:#1c2124;
+      --white:#f5f4f0;
+      --grey:#969da0;
+      --grey-light:#c8cccd;
+      --gold:#d6a545;
+      --gold-light:#edc66d;
+      --gold-dark:#9c7425;
+      --border:rgba(255,255,255,.09);
+      --border-gold:rgba(214,165,69,.30);
+      --max:1240px;
+    }
+
+    * {
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html {
+      scroll-behavior:smooth;
+    }
+
+    body {
+      background:var(--black);
+      color:var(--white);
+      font-family:"DM Sans",sans-serif;
+      line-height:1.65;
+      overflow-x:hidden;
+    }
+
+    a {
+      color:inherit;
+      text-decoration:none;
+    }
+
+    img {
+      max-width:100%;
+      display:block;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font:inherit;
+    }
+
+    .container {
+      width:min(var(--max),calc(100% - 48px));
+      margin:auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:1000;
+      border-bottom:1px solid rgba(255,255,255,.07);
+      background:rgba(7,9,10,.88);
+      backdrop-filter:blur(18px);
+      transition:.3s;
+    }
+
+    header.scrolled {
+      background:rgba(7,9,10,.97);
+      box-shadow:0 10px 40px rgba(0,0,0,.3);
+    }
+
+    .nav {
+      min-height:82px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:30px;
+    }
+
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:13px;
+      flex-shrink:0;
+    }
+
+    .brand-mark {
+      width:40px;
+      height:40px;
+      border:1px solid var(--gold);
+      display:grid;
+      place-items:center;
+      color:var(--gold);
+      font-family:Manrope,sans-serif;
+      font-weight:800;
+      font-size:17px;
+      letter-spacing:-1px;
+      position:relative;
+    }
+
+    .brand-mark:after {
+      content:"";
+      position:absolute;
+      width:9px;
+      height:9px;
+      background:var(--gold);
+      right:-4px;
+      bottom:-4px;
+    }
+
+    .brand-name {
+      font-family:Manrope,sans-serif;
+      font-weight:800;
+      letter-spacing:2px;
+      font-size:14px;
+    }
+
+    .brand-name span {
+      display:block;
+      font-size:8px;
+      color:var(--gold);
+      letter-spacing:3px;
+      margin-top:1px;
+    }
+
+    nav ul {
+      display:flex;
+      list-style:none;
+      gap:25px;
+      align-items:center;
+    }
+
+    nav a {
+      font-size:13px;
+      color:var(--grey-light);
+      transition:.25s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color:var(--gold-light);
+    }
+
+    .nav-cta {
+      border:1px solid var(--gold);
+      padding:11px 17px;
+      color:var(--white)!important;
+      transition:.3s;
+    }
+
+    .nav-cta:hover {
+      background:var(--gold);
+      color:var(--black)!important;
+    }
+
+    .menu-toggle {
+      display:none;
+      background:none;
+      border:0;
+      color:var(--white);
+      font-size:26px;
+      cursor:pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height:78vh;
+      padding:170px 0 95px;
+      position:relative;
+      display:flex;
+      align-items:flex-end;
+      overflow:hidden;
+      background:
+        linear-gradient(90deg,rgba(7,9,10,.96) 0%,rgba(7,9,10,.84) 48%,rgba(7,9,10,.42) 100%),
+        linear-gradient(0deg,var(--black) 0%,transparent 35%),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2200&q=85") center/cover;
+    }
+
+    .hero:before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg,rgba(214,165,69,.04) 1px,transparent 1px),
+        linear-gradient(rgba(214,165,69,.04) 1px,transparent 1px);
+      background-size:80px 80px;
+      mask-image:linear-gradient(to bottom,black,transparent);
+      pointer-events:none;
+    }
+
+    .hero-content {
+      position:relative;
+      max-width:850px;
+    }
+
+    .eyebrow {
+      color:var(--gold);
+      text-transform:uppercase;
+      letter-spacing:4px;
+      font-size:11px;
+      font-weight:700;
+      margin-bottom:20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family:Manrope,sans-serif;
+      line-height:1.08;
+    }
+
+    h1 {
+      font-size:clamp(46px,7vw,92px);
+      letter-spacing:-4px;
+      max-width:950px;
+      margin-bottom:28px;
+    }
+
+    .hero p {
+      max-width:700px;
+      font-size:18px;
+      color:var(--grey-light);
+    }
+
+    .hero-bottom {
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      border-top:1px solid var(--border);
+      background:rgba(7,9,10,.55);
+    }
+
+    .hero-strip {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+    }
+
+    .hero-strip div {
+      padding:17px 20px;
+      border-right:1px solid var(--border);
+      color:var(--grey);
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+    }
+
+    .hero-strip div:first-child {
+      color:var(--gold-light);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding:115px 0;
+      border-bottom:1px solid var(--border);
+    }
+
+    .section-head {
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:50px;
+      margin-bottom:60px;
+    }
+
+    .section-head h2 {
+      font-size:clamp(35px,4vw,58px);
+      letter-spacing:-2.5px;
+      max-width:700px;
+    }
+
+    .section-head p {
+      max-width:440px;
+      color:var(--grey);
+      font-size:15px;
+    }
+
+    /* INTRO */
+
+    .intro-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:90px;
+      align-items:center;
+    }
+
+    .intro-title {
+      font-size:clamp(36px,4vw,58px);
+      letter-spacing:-2px;
+    }
+
+    .intro-title span {
+      color:var(--gold);
+    }
+
+    .intro-copy {
+      color:var(--grey-light);
+      font-size:17px;
+    }
+
+    .intro-copy p + p {
+      margin-top:20px;
+    }
+
+    /* PRODUCTS */
+
+    .products-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:1px;
+      background:var(--border);
+      border:1px solid var(--border);
+    }
+
+    .product-card {
+      background:var(--black2);
+      min-height:470px;
+      padding:42px;
+      position:relative;
+      overflow:hidden;
+      transition:.4s;
+    }
+
+    .product-card:hover {
+      background:var(--black3);
+      transform:translateY(-3px);
+      z-index:2;
+    }
+
+    .product-card.featured {
+      background:
+        linear-gradient(135deg,rgba(214,165,69,.08),transparent 55%),
+        var(--black2);
+    }
+
+    .product-number {
+      color:var(--gold);
+      font-family:Manrope,sans-serif;
+      font-size:12px;
+      letter-spacing:3px;
+      margin-bottom:90px;
+    }
+
+    .product-icon {
+      position:absolute;
+      top:34px;
+      right:38px;
+      width:65px;
+      height:65px;
+      border:1px solid var(--border-gold);
+      display:grid;
+      place-items:center;
+      color:var(--gold);
+      font-size:24px;
+    }
+
+    .product-card h3 {
+      font-size:31px;
+      letter-spacing:-1px;
+      margin-bottom:16px;
+    }
+
+    .product-card p {
+      color:var(--grey);
+      max-width:500px;
+      margin-bottom:30px;
+    }
+
+    .product-tags {
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-bottom:28px;
+    }
+
+    .product-tags span {
+      border:1px solid var(--border);
+      padding:7px 10px;
+      color:var(--grey-light);
+      font-size:10px;
+      text-transform:uppercase;
+      letter-spacing:1.3px;
+    }
+
+    .product-link {
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      color:var(--gold-light);
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-size:11px;
+      font-weight:700;
+    }
+
+    .product-link span {
+      transition:.3s;
+    }
+
+    .product-link:hover span {
+      transform:translateX(5px);
+    }
+
+    /* PRODUCT DETAIL */
+
+    .detail-section {
+      background:var(--black2);
+    }
+
+    .detail-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:80px;
+      align-items:center;
+    }
+
+    .detail-image {
+      min-height:560px;
+      background:
+        linear-gradient(180deg,transparent 40%,rgba(7,9,10,.85)),
+        url("https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=1500&q=85") center/cover;
+      position:relative;
+      border:1px solid var(--border);
+    }
+
+    .detail-image-label {
+      position:absolute;
+      left:30px;
+      bottom:30px;
+      right:30px;
+    }
+
+    .detail-image-label small {
+      color:var(--gold);
+      text-transform:uppercase;
+      letter-spacing:3px;
+      font-size:10px;
+    }
+
+    .detail-image-label strong {
+      display:block;
+      font-family:Manrope,sans-serif;
+      font-size:27px;
+      margin-top:7px;
+    }
+
+    .detail-content h2 {
+      font-size:clamp(35px,4vw,55px);
+      letter-spacing:-2px;
+      margin-bottom:20px;
+    }
+
+    .detail-content > p {
+      color:var(--grey-light);
+      margin-bottom:30px;
+    }
+
+    .check-list {
+      list-style:none;
+      border-top:1px solid var(--border);
+    }
+
+    .check-list li {
+      padding:16px 0;
+      border-bottom:1px solid var(--border);
+      display:flex;
+      gap:14px;
+      color:var(--grey-light);
+      font-size:14px;
+    }
+
+    .check-list li:before {
+      content:"✓";
+      color:var(--gold);
+      font-weight:bold;
+    }
+
+    /* PROCUREMENT */
+
+    .procurement-grid {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:1px;
+      background:var(--border);
+      border:1px solid var(--border);
+    }
+
+    .procurement-card {
+      background:var(--black2);
+      padding:34px 28px;
+      min-height:250px;
+    }
+
+    .procurement-card .num {
+      color:var(--gold);
+      font-size:11px;
+      letter-spacing:2px;
+    }
+
+    .procurement-card h3 {
+      font-size:20px;
+      margin:42px 0 12px;
+    }
+
+    .procurement-card p {
+      color:var(--grey);
+      font-size:13px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background:
+        radial-gradient(circle at 75% 40%,rgba(214,165,69,.13),transparent 30%),
+        var(--black2);
+    }
+
+    .cta-box {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:50px;
+      border:1px solid var(--border-gold);
+      padding:60px;
+      background:rgba(214,165,69,.025);
+    }
+
+    .cta-box h2 {
+      font-size:clamp(35px,4vw,58px);
+      letter-spacing:-2px;
+      max-width:700px;
+    }
+
+    .cta-box p {
+      color:var(--grey);
+      max-width:600px;
+      margin-top:15px;
+    }
+
+    .button {
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      gap:10px;
+      padding:15px 23px;
+      border:1px solid var(--gold);
+      text-transform:uppercase;
+      letter-spacing:1.7px;
+      font-size:11px;
+      font-weight:700;
+      white-space:nowrap;
+      transition:.3s;
+    }
+
+    .button.primary {
+      background:var(--gold);
+      color:var(--black);
+    }
+
+    .button.primary:hover {
+      background:var(--gold-light);
+    }
+
+    .button.secondary:hover {
+      background:rgba(214,165,69,.1);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding:70px 0 30px;
+      background:#050708;
+    }
+
+    .footer-grid {
+      display:grid;
+      grid-template-columns:1.5fr 1fr 1fr 1fr;
+      gap:50px;
+      padding-bottom:60px;
+      border-bottom:1px solid var(--border);
+    }
+
+    .footer-brand p {
+      color:var(--grey);
+      max-width:370px;
+      margin-top:20px;
+      font-size:13px;
+    }
+
+    footer h4 {
+      color:var(--white);
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      margin-bottom:18px;
+    }
+
+    footer ul {
+      list-style:none;
+    }
+
+    footer li {
+      margin-bottom:9px;
+    }
+
+    footer li a {
+      color:var(--grey);
+      font-size:13px;
+      transition:.2s;
+    }
+
+    footer li a:hover {
+      color:var(--gold-light);
+    }
+
+    .footer-bottom {
+      padding-top:25px;
+      display:flex;
+      justify-content:space-between;
+      gap:30px;
+      color:#687074;
+      font-size:11px;
+    }
+
+    /* REVEAL */
+
+    .reveal {
+      opacity:0;
+      transform:translateY(25px);
+      transition:opacity .8s ease,transform .8s ease;
+    }
+
+    .reveal.visible {
+      opacity:1;
+      transform:none;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:1000px) {
+      nav ul {
+        gap:14px;
+      }
+
+      .intro-grid,
+      .detail-grid {
+        grid-template-columns:1fr;
+        gap:50px;
+      }
+
+      .procurement-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:800px) {
+      .container {
+        width:min(var(--max),calc(100% - 32px));
+      }
+
+      .menu-toggle {
+        display:block;
+      }
+
+      nav {
+        display:none;
+        position:absolute;
+        top:82px;
+        left:0;
+        width:100%;
+        background:rgba(7,9,10,.98);
+        border-bottom:1px solid var(--border);
+      }
+
+      nav.open {
+        display:block;
+      }
+
+      nav ul {
+        flex-direction:column;
+        align-items:stretch;
+        padding:20px;
+        gap:0;
+      }
+
+      nav li a {
+        display:block;
+        padding:14px 5px;
+        border-bottom:1px solid var(--border);
+      }
+
+      .nav-cta {
+        margin-top:10px;
+        text-align:center;
+      }
+
+      .hero {
+        min-height:720px;
+        padding-bottom:130px;
+      }
+
+      .hero-strip {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .hero-strip div {
+        padding:12px;
+      }
+
+      .products-grid {
+        grid-template-columns:1fr;
+      }
+
+      .product-card {
+        min-height:420px;
+      }
+
+      .cta-box {
+        padding:35px 25px;
+        flex-direction:column;
+        align-items:flex-start;
+      }
+    }
+
+    @media(max-width:600px) {
+      section {
+        padding:80px 0;
+      }
+
+      .section-head {
+        display:block;
+        margin-bottom:40px;
+      }
+
+      .section-head p {
+        margin-top:20px;
+      }
+
+      h1 {
+        font-size:47px;
+        letter-spacing:-2.5px;
+      }
+
+      .hero p {
+        font-size:16px;
+      }
+
+      .hero-strip {
+        grid-template-columns:1fr 1fr;
+      }
+
+      .hero-strip div {
+        font-size:9px;
+        letter-spacing:1px;
+      }
+
+      .product-card {
+        padding:30px;
+      }
+
+      .product-number {
+        margin-bottom:65px;
+      }
+
+      .detail-image {
+        min-height:400px;
+      }
+
+      .procurement-grid {
+        grid-template-columns:1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns:1fr;
+      }
+
+      .footer-bottom {
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header id="header">
+  <div class="container nav">
+
+    <a href="index.html" class="brand">
+      <div class="brand-mark">M</div>
+      <div class="brand-name">
+        MERIDIAN
+        <span>ENERGY MANAGEMENT</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <nav id="mainNav">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="quote.html" class="nav-cta">Request a Quote</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="container hero-content reveal">
+
+    <div class="eyebrow">Energy Products • Global Procurement</div>
+
+    <h1>
+      Energy sourced<br>
+      with <span style="color:var(--gold)">purpose.</span>
+    </h1>
+
+    <p>
+      Meridian Energy Management connects qualified buyers with established
+      supply networks across refined petroleum products, crude oil,
+      LNG and LPG.
+    </p>
+
+  </div>
+
+  <div class="hero-bottom">
+    <div class="container hero-strip">
+      <div>Refined Products</div>
+      <div>Crude Oil</div>
+      <div>Gas Solutions</div>
+      <div>Global Sourcing</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- INTRO -->
+
+<section>
+  <div class="container intro-grid">
+
+    <div class="reveal">
+      <div class="eyebrow">Our Product Portfolio</div>
+
+      <h2 class="intro-title">
+        The right product.<br>
+        The right source.<br>
+        <span>The right structure.</span>
+      </h2>
+    </div>
+
+    <div class="intro-copy reveal">
+      <p>
+        Meridian Energy Management provides strategic sourcing and
+        procurement support across a portfolio of internationally traded
+        energy commodities.
+      </p>
+
+      <p>
+        Our role is to simplify complex supply chains by connecting
+        qualified requirements with appropriate suppliers, logistics
+        partners and transaction structures.
+      </p>
+
+      <p>
+        Availability, origin, specifications, volumes, pricing and delivery
+        terms are assessed according to each individual requirement.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section>
+  <div class="container">
+
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Core Portfolio</div>
+        <h2>Energy products for demanding operations.</h2>
+      </div>
+
+      <p>
+        Our portfolio covers major refined petroleum products,
+        crude oil and gas commodities used across Southern African
+        and international markets.
+      </p>
+    </div>
+
+
+    <div class="products-grid">
+
+      <!-- EN590 -->
+
+      <article class="product-card featured reveal">
+
+        <div class="product-number">01 / REFINED PRODUCT</div>
+
+        <div class="product-icon">◈</div>
+
+        <h3>EN590 10ppm Diesel</h3>
+
+        <p>
+          Ultra-low sulphur diesel for commercial, industrial,
+          mining, logistics and fleet applications, subject to
+          applicable specification and availability.
+        </p>
+
+        <div class="product-tags">
+          <span>10ppm</span>
+          <span>ULSD</span>
+          <span>Diesel</span>
+          <span>Bulk Supply</span>
+        </div>
+
+        <a href="quote.html" class="product-link">
+          Discuss requirement <span>→</span>
+        </a>
+
+      </article>
+
+
+      <!-- JET A1 -->
+
+      <article class="product-card reveal">
+
+        <div class="product-number">02 / AVIATION FUEL</div>
+
+        <div class="product-icon">✦</div>
+
+        <h3>Jet A1</h3>
+
+        <p>
+          Aviation turbine fuel procurement support for qualified
+          aviation and commercial requirements, with sourcing and
+          logistics coordinated around delivery specifications.
+        </p>
+
+        <div class="product-tags">
+          <span>Jet A1</span>
+          <span>Aviation</span>
+          <span>Bulk</span>
+          <span>Global Supply</span>
+        </div>
+
+        <a href="quote.html" class="product-link">
+          Discuss requirement <span>→</span>
+        </a>
+
+      </article>
+
+
+      <!-- D6 -->
+
+      <article class="product-card reveal">
+
+        <div class="product-number">03 / FUEL OIL</div>
+
+        <div class="product-icon">◇</div>
+
+        <h3>D6 Virgin Fuel Oil</h3>
+
+        <p>
+          Fuel oil sourcing for industrial and commercial applications,
+          with transaction structures developed according to product,
+          volume, destination and buyer requirements.
+        </p>
+
+        <div class="product-tags">
+          <span>D6</span>
+          <span>Fuel Oil</span>
+          <span>Bulk</span>
+          <span>Procurement</span>
+        </div>
+
+        <a href="quote.html" class="product-link">
+          Discuss requirement <span>→</span>
+        </a>
+
+      </article>
+
+
+      <!-- CRUDE -->
+
+      <article class="product-card featured reveal">
+
+        <div class="product-number">04 / CRUDE OIL</div>
+
+        <div class="product-icon">◐</div>
+
+        <h3>Crude Oil</h3>
+
+        <p>
+          Strategic crude oil sourcing through international supplier
+          networks for qualified commercial requirements and
+          destination-specific procurement structures.
+        </p>
+
+        <div class="product-tags">
+          <span>Crude</span>
+          <span>Global</span>
+          <span>Bulk Volumes</span>
+          <span>Trading</span>
+        </div>
+
+        <a href="quote.html" class="product-link">
+          Discuss requirement <span>→</span>
+        </a>
+
+      </article>
+
+
+      <!-- LNG LPG -->
+
+      <article class="product-card reveal" style="grid-column:1 / -1;">
+
+        <div class="product-number">05 / GAS SOLUTIONS</div>
+
+        <div class="product-icon">◎</div>
+
+        <h3>LNG &amp; LPG</h3>
+
+        <p>
+          Liquefied natural gas and liquefied petroleum gas sourcing
+          solutions for industrial, commercial and energy applications.
+          Supply arrangements are structured around destination,
+          specification, volume and logistics requirements.
+        </p>
+
+        <div class="product-tags">
+          <span>LNG</span>
+          <span>LPG</span>
+          <span>Gas</span>
+          <span>Bulk</span>
+          <span>International Sourcing</span>
+        </div>
+
+        <a href="quote.html" class="product-link">
+          Discuss requirement <span>→</span>
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PRODUCT FOCUS -->
+
+<section class="detail-section">
+
+  <div class="container detail-grid">
+
+    <div class="detail-image reveal">
+      <div class="detail-image-label">
+        <small>Strategic Procurement</small>
+        <strong>From source to destination.</strong>
+      </div>
+    </div>
+
+    <div class="detail-content reveal">
+
+      <div class="eyebrow">Beyond The Commodity</div>
+
+      <h2>
+        Procurement is more than finding a product.
+      </h2>
+
+      <p>
+        A competitive energy transaction depends on much more than
+        commodity availability. Origin, specification, supplier
+        credibility, documentation, logistics, destination and
+        commercial structure all matter.
+      </p>
+
+      <ul class="check-list">
+        <li>Product and specification alignment</li>
+        <li>Supplier and counterparty coordination</li>
+        <li>Volume and delivery requirement assessment</li>
+        <li>Commercial and transaction support</li>
+        <li>Logistics and documentation coordination</li>
+        <li>Buyer-focused procurement management</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROCUREMENT SERVICES -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <div>
+        <div class="eyebrow">Supply Support</div>
+        <h2>We help manage the transaction around the product.</h2>
+      </div>
+
+      <p>
+        Meridian supports the procurement journey from initial
+        requirement through supplier coordination, documentation
+        and delivery planning.
+      </p>
+
+    </div>
+
+
+    <div class="procurement-grid">
+
+      <div class="procurement-card reveal">
+        <div class="num">01</div>
+        <h3>Supplier Coordination</h3>
+        <p>
+          Coordination with appropriate supply-side partners
+          according to the buyer's requirement and transaction structure.
+        </p>
+      </div>
+
+      <div class="procurement-card reveal">
+        <div class="num">02</div>
+        <h3>RFQ Management</h3>
+        <p>
+          Requirements are structured into clear procurement briefs
+          to improve pricing, availability and response quality.
+        </p>
+      </div>
+
+      <div class="procurement-card reveal">
+        <div class="num">03</div>
+        <h3>Logistics Support</h3>
+        <p>
+          Delivery requirements, destination considerations and
+          logistics coordination form part of the procurement process.
+        </p>
+      </div>
+
+      <div class="procurement-card reveal">
+        <div class="num">04</div>
+        <h3>Documentation</h3>
+        <p>
+          Transaction and supply documentation is coordinated according
+          to the requirements of the relevant parties.
+        </p>
+      </div>
+
+      <div class="procurement-card reveal">
+        <div class="num">05</div>
+        <h3>Volume Contracts</h3>
+        <p>
+          Structured procurement arrangements can be explored for
+          recurring or larger-volume requirements.
+        </p>
+      </div>
+
+      <div class="procurement-card reveal">
+        <div class="num">06</div>
+        <h3>Emergency Supply</h3>
+        <p>
+          Urgent requirements can be assessed and escalated through
+          available sourcing channels where practical.
+        </p>
+      </div>
+
+      <div class="procurement-card reveal">
+        <div class="num">07</div>
+        <h3>Market Sourcing</h3>
+        <p>
+          International supply networks are assessed according to
+          destination, product and commercial requirements.
+        </p>
+      </div>
+
+      <div class="procurement-card reveal">
+        <div class="num">08</div>
+        <h3>Buyer Support</h3>
+        <p>
+          A single procurement interface helps simplify communication
+          across the supply chain.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <div class="cta-box reveal">
+
+      <div>
+        <div class="eyebrow">Start A Procurement Requirement</div>
+
+        <h2>
+          Tell us what you need. We'll assess the route to supply.
+        </h2>
+
+        <p>
+          Submit your product, volume, destination and timeline.
+          Our team will review the requirement and determine the
+          appropriate sourcing approach.
+        </p>
+      </div>
+
+      <a href="quote.html" class="button primary">
+        Request a Quote →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="brand">
+
+          <div class="brand-mark">M</div>
+
+          <div class="brand-name">
+            MERIDIAN
+            <span>ENERGY MANAGEMENT</span>
+          </div>
+
+        </a>
+
+        <p>
+          Strategic energy procurement and supply solutions connecting
+          qualified buyers with established global energy markets.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Company</h4>
+
+        <ul>
+          <li><a href="about.html">About Meridian</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="process.html">Our Process</a></li>
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h4>Products</h4>
+
+        <ul>
+          <li><a href="products.html">EN590 Diesel</a></li>
+          <li><a href="products.html">Jet A1</a></li>
+          <li><a href="products.html">D6 Fuel Oil</a></li>
+          <li><a href="products.html">Crude Oil</a></li>
+          <li><a href="products.html">LNG &amp; LPG</a></li>
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h4>Contact</h4>
+
+        <ul>
+          <li><a href="tel:0847345588">084 734 5588</a></li>
+          <li><a href="mailto:trading@meridianenergymanagement.com">trading@meridianenergymanagement.com</a></li>
+          <li>106 Adderley Street</li>
+          <li>Cape Town, South Africa</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div>
+        © <span id="year"></span> Meridian Energy Management. All rights reserved.
+      </div>
+
+      <div>
+        <a href="privacy.html">Privacy</a>
+        &nbsp; / &nbsp;
+        <a href="terms.html">Terms</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  /* HEADER */
+
+  const header = document.getElementById("header");
+
+  window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 30) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+
+  });
+
+
+  /* MOBILE MENU */
+
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  menuToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("open");
+  });
+
+
+  document.querySelectorAll("#mainNav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+    });
+
+  });
+
+
+  /* REVEAL ANIMATION */
+
+  const revealObserver = new IntersectionObserver(
+    entries => {
+
+      entries.forEach(entry => {
+
+        if(entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+
+      });
+
+    },
+    {
+      threshold:.12
+    }
+  );
+
+
+  document.querySelectorAll(".reveal").forEach(el => {
+    revealObserver.observe(el);
+  });
+
+
+  /* YEAR */
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
