@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Page Not Found | Meridian Energy Management</title>
+<meta name="description" content="The page you are looking for could not be found. Return to Meridian Energy Management.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--black:#07090a;
+--black2:#0d1012;
+--white:#f5f4f0;
+--grey:#969da0;
+--grey-light:#c8cccd;
+--gold:#d6a545;
+--gold-light:#edc66d;
+--border:rgba(255,255,255,.09);
+--max:1240px
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+min-height:100vh;
+font-family:"DM Sans",sans-serif;
+background:var(--black);
+color:var(--white);
+display:flex;
+flex-direction:column;
+overflow-x:hidden
+}
+
+a{text-decoration:none;color:inherit}
+
+header{
+height:82px;
+border-bottom:1px solid var(--border);
+background:rgba(7,9,10,.92);
+display:flex;
+align-items:center
+}
+
+.container{
+width:min(var(--max),calc(100% - 48px));
+margin:auto
+}
+
+.nav{
+display:flex;
+align-items:center;
+justify-content:space-between
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:13px;
+font-family:"Manrope",sans-serif;
+font-weight:800;
+letter-spacing:.08em;
+font-size:15px
+}
+
+.logo-mark{
+width:39px;
+height:39px;
+border:1px solid var(--gold);
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--gold);
+font-weight:800;
+font-size:18px
+}
+
+.nav-link{
+font-size:13px;
+color:var(--grey-light);
+transition:.25s
+}
+
+.nav-link:hover{color:var(--gold-light)}
+
+main{
+flex:1;
+display:flex;
+align-items:center;
+position:relative;
+overflow:hidden;
+background:
+linear-gradient(90deg,rgba(7,9,10,.97),rgba(7,9,10,.78)),
+url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2200&q=85")
+center/cover
+}
+
+main:before{
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(rgba(214,165,69,.035) 1px,transparent 1px),
+linear-gradient(90deg,rgba(214,165,69,.035) 1px,transparent 1px);
+background-size:70px 70px
+}
+
+.error{
+position:relative;
+z-index:2;
+padding:100px 0;
+text-align:center;
+width:100%
+}
+
+.number{
+font-family:"Manrope",sans-serif;
+font-size:clamp(110px,22vw,260px);
+font-weight:800;
+line-height:.8;
+letter-spacing:-.09em;
+color:transparent;
+-webkit-text-stroke:1px var(--gold);
+margin-bottom:45px
+}
+
+.eyebrow{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:.22em;
+color:var(--gold-light);
+font-weight:700;
+margin-bottom:20px
+}
+
+.eyebrow:before,
+.eyebrow:after{
+content:"";
+width:38px;
+height:1px;
+background:var(--gold)
+}
+
+h1{
+font-family:"Manrope",sans-serif;
+font-size:clamp(36px,5vw,60px);
+line-height:1.05;
+letter-spacing:-.05em;
+margin-bottom:20px
+}
+
+p{
+max-width:570px;
+margin:0 auto 35px;
+color:var(--grey-light);
+font-size:17px
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:15px 24px;
+border:1px solid var(--gold);
+font-size:12px;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:.12em;
+transition:.25s
+}
+
+.btn:hover{
+background:var(--gold);
+color:var(--black)
+}
+
+.btn.secondary{
+border-color:var(--border);
+color:var(--grey-light)
+}
+
+.btn.secondary:hover{
+border-color:var(--gold);
+color:var(--gold-light);
+background:transparent
+}
+
+footer{
+border-top:1px solid var(--border);
+background:#050607;
+padding:25px 0;
+text-align:center;
+font-size:11px;
+color:var(--grey)
+}
+
+@media(max-width:600px){
+
+.container{
+width:min(var(--max),calc(100% - 30px))
+}
+
+header{
+height:72px
+}
+
+.number{
+font-size:130px
+}
+
+p{
+font-size:15px
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<a href="index.html" class="logo">
+<div class="logo-mark">M</div>
+<span>MERIDIAN</span>
+</a>
+
+<a href="index.html" class="nav-link">Return to Meridian</a>
+
+</div>
+</header>
+
+<main>
+
+<div class="error">
+
+<div class="number">404</div>
+
+<div class="eyebrow">Page Not Found</div>
+
+<h1>The requested page doesn't exist.</h1>
+
+<p>
+The page may have moved, been removed, or the address may have been entered incorrectly. Let's get you back to the Meridian Energy Management website.
+</p>
+
+<div class="buttons">
+
+<a href="index.html" class="btn">Return Home</a>
+
+<a href="quote.html" class="btn secondary">Request a Quote</a>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+<div class="container">
+© 2026 Meridian Energy Management. All rights reserved.
+</div>
+</footer>
+
+</body>
+</html>
