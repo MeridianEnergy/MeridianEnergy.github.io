@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meridian Energy Management | Strategic Energy Procurement & Supply</title>
+
+    <meta name="description" content="Meridian Energy Management provides strategic energy procurement, global sourcing and supply solutions across Southern Africa and international markets.">
+    <meta name="keywords" content="energy procurement South Africa, fuel supply South Africa, EN590 diesel, Jet A1, crude oil, LNG, LPG, fuel sourcing, energy management">
+    <meta name="author" content="Meridian Energy Management">
+
+    <meta property="og:title" content="Meridian Energy Management">
+    <meta property="og:description" content="Strategic energy procurement, sourcing and supply solutions.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="brand">
+
+            <div class="brand-symbol">
+                M
+            </div>
+
+            <div class="brand-text">
+                <strong>MERIDIAN</strong>
+                <span>ENERGY MANAGEMENT</span>
+            </div>
+
+        </a>
+
+        <nav class="desktop-nav">
+
+            <a href="about.html">About</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="products.html">Products</a>
+            <a href="industries.html">Industries</a>
+            <a href="process.html">Process</a>
+            <a href="insights.html">Insights</a>
+            <a href="contact.html">Contact</a>
+
+            <a href="quote.html" class="nav-cta">
+                Request a Quote
+            </a>
+
+        </nav>
+
+        <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="about.html">About</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="products.html">Products</a>
+        <a href="industries.html">Industries</a>
+        <a href="process.html">Process</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="quote.html" class="mobile-cta">
+            Request a Quote
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-copy reveal">
+
+            <div class="eyebrow">
+                <span></span>
+                ENERGY • PROCUREMENT • SUPPLY
+            </div>
+
+            <h1>
+                Powering
+                <span>possibility.</span>
+                Delivering energy.
+            </h1>
+
+            <p>
+                Meridian Energy Management connects commercial requirements
+                with strategic energy procurement, global sourcing and
+                reliable supply solutions across Southern Africa and
+                international markets.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="quote.html" class="button button-gold">
+                    Request a Quote
+                    <span>→</span>
+                </a>
+
+                <a href="about.html" class="button button-outline">
+                    Discover Meridian
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-bottom">
+
+        <div class="container hero-strip">
+
+            <div>
+                <strong>01</strong>
+                <span>Energy Procurement</span>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <span>Global Sourcing</span>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <span>Supply Solutions</span>
+            </div>
+
+            <div>
+                <strong>04</strong>
+                <span>Strategic Partnerships</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="section intro-section">
+
+    <div class="container">
+
+        <div class="section-grid">
+
+            <div class="section-heading reveal">
+
+                <div class="eyebrow dark">
+                    <span></span>
+                    WHO WE ARE
+                </div>
+
+                <h2>
+                    Energy markets are complex.
+                    <em>Your supply shouldn't be.</em>
+                </h2>
+
+            </div>
+
+            <div class="intro-copy reveal">
+
+                <p class="lead">
+                    Meridian Energy Management is a strategic energy
+                    procurement and supply company connecting businesses
+                    with global energy markets.
+                </p>
+
+                <p>
+                    We help organisations identify supply opportunities,
+                    engage qualified counterparties and structure practical
+                    procurement solutions across petroleum products,
+                    crude oil, aviation fuel, LNG and LPG.
+                </p>
+
+                <a href="about.html" class="text-link">
+                    More about Meridian
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CAPABILITIES ================= -->
+
+<section class="section capabilities-section dark-section">
+
+    <div class="container">
+
+        <div class="section-top reveal">
+
+            <div>
+
+                <div class="eyebrow">
+                    <span></span>
+                    OUR CAPABILITIES
+                </div>
+
+                <h2>
+                    Built around the
+                    <em>energy requirement.</em>
+                </h2>
+
+            </div>
+
+            <p>
+                From sourcing to supply, Meridian provides a structured
+                approach designed around the requirements of each client.
+            </p>
+
+        </div>
+
+
+        <div class="capability-grid">
+
+            <article class="capability-card reveal">
+
+                <div class="card-number">01</div>
+
+                <div class="card-icon">◆</div>
+
+                <h3>Energy Procurement</h3>
+
+                <p>
+                    Strategic procurement support for organisations
+                    requiring dependable access to energy commodities.
+                </p>
+
+                <a href="solutions.html">
+                    Explore
+                    <span>→</span>
+                </a>
+
+            </article>
+
+
+            <article class="capability-card reveal">
+
+                <div class="card-number">02</div>
+
+                <div class="card-icon">◇</div>
+
+                <h3>Strategic Sourcing</h3>
+
+                <p>
+                    Access to established supplier networks and
+                    international energy markets.
+                </p>
+
+                <a href="solutions.html">
+                    Explore
+                    <span>→</span>
+                </a>
+
+            </article>
+
+
+            <article class="capability-card reveal">
+
+                <div class="card-number">03</div>
+
+                <div class="card-icon">◈</div>
+
+                <h3>Supply & Logistics</h3>
+
+                <p>
+                    Coordinated supply solutions designed around
+                    destination, volume and delivery requirements.
+                </p>
+
+                <a href="solutions.html">
+                    Explore
+                    <span>→</span>
+                </a>
+
+            </article>
+
+
+            <article class="capability-card reveal">
+
+                <div class="card-number">04</div>
+
+                <div class="card-icon">◇</div>
+
+                <h3>Transaction Support</h3>
+
+                <p>
+                    Structured support throughout commercial engagement,
+                    documentation and execution.
+                </p>
+
+                <a href="solutions.html">
+                    Explore
+                    <span>→</span>
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="section products-section">
+
+    <div class="container">
+
+        <div class="section-top reveal">
+
+            <div>
+
+                <div class="eyebrow dark">
+                    <span></span>
+                    ENERGY PORTFOLIO
+                </div>
+
+                <h2>
+                    Products for
+                    <em>real-world demand.</em>
+                </h2>
+
+            </div>
+
+            <a href="products.html" class="text-link">
+                View all products
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <div class="product-grid">
+
+            <a href="products/en590.html" class="product-card product-large reveal">
+
+                <div class="product-image diesel-image"></div>
+
+                <div class="product-content">
+
+                    <small>01 / REFINED PRODUCTS</small>
+
+                    <h3>EN590 Diesel</h3>
+
+                    <p>
+                        Ultra-low sulphur diesel solutions for commercial,
+                        industrial and transport requirements.
+                    </p>
+
+                    <span class="product-arrow">↗</span>
+
+                </div>
+
+            </a>
+
+
+            <a href="products/jet-a1.html" class="product-card reveal">
+
+                <div class="product-image aviation-image"></div>
+
+                <div class="product-content">
+
+                    <small>02 / AVIATION</small>
+
+                    <h3>Jet A1</h3>
+
+                    <p>
+                        Aviation fuel sourcing and supply solutions.
+                    </p>
+
+                    <span class="product-arrow">↗</span>
+
+                </div>
+
+            </a>
+
+
+            <a href="products/fuel-oil.html" class="product-card reveal">
+
+                <div class="product-image fuel-image"></div>
+
+                <div class="product-content">
+
+                    <small>03 / FUEL OILS</small>
+
+                    <h3>Fuel Oil</h3>
+
+                    <p>
+                        Fuel oil procurement for commercial and industrial
+                        applications.
+                    </p>
+
+                    <span class="product-arrow">↗</span>
+
+                </div>
+
+            </a>
+
+
+            <a href="products/crude-oil.html" class="product-card reveal">
+
+                <div class="product-image crude-image"></div>
+
+                <div class="product-content">
+
+                    <small>04 / CRUDE</small>
+
+                    <h3>Crude Oil</h3>
+
+                    <p>
+                        International crude sourcing and transaction
+                        support.
+                    </p>
+
+                    <span class="product-arrow">↗</span>
+
+                </div>
+
+            </a>
+
+
+            <a href="products/lng-lpg.html" class="product-card product-wide reveal">
+
+                <div class="product-image gas-image"></div>
+
+                <div class="product-content">
+
+                    <small>05 / GAS</small>
+
+                    <h3>LNG & LPG</h3>
+
+                    <p>
+                        Flexible sourcing solutions for liquefied natural
+                        gas and liquefied petroleum gas requirements.
+                    </p>
+
+                    <span class="product-arrow">↗</span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INDUSTRIES ================= -->
+
+<section class="section industries-section dark-section">
+
+    <div class="container">
+
+        <div class="section-top reveal">
+
+            <div>
+
+                <div class="eyebrow">
+                    <span></span>
+                    INDUSTRIES
+                </div>
+
+                <h2>
+                    Energy that moves
+                    <em>industries forward.</em>
+                </h2>
+
+            </div>
+
+            <p>
+                Our procurement capabilities support businesses operating
+                across energy-intensive sectors.
+            </p>
+
+        </div>
+
+
+        <div class="industry-layout">
+
+            <div class="industry-list">
+
+                <button class="industry-item active" data-industry="mining">
+                    <span>01</span>
+                    Mining
+                    <b>→</b>
+                </button>
+
+                <button class="industry-item" data-industry="logistics">
+                    <span>02</span>
+                    Logistics & Transport
+                    <b>→</b>
+                </button>
+
+                <button class="industry-item" data-industry="agriculture">
+                    <span>03</span>
+                    Agriculture
+                    <b>→</b>
+                </button>
+
+                <button class="industry-item" data-industry="industrial">
+                    <span>04</span>
+                    Industrial & Manufacturing
+                    <b>→</b>
+                </button>
+
+                <button class="industry-item" data-industry="aviation">
+                    <span>05</span>
+                    Aviation
+                    <b>→</b>
+                </button>
+
+                <button class="industry-item" data-industry="maritime">
+                    <span>06</span>
+                    Maritime
+                    <b>→</b>
+                </button>
+
+            </div>
+
+
+            <div class="industry-display">
+
+                <div class="industry-background" id="industryBackground"></div>
+
+                <div class="industry-overlay"></div>
+
+                <div class="industry-info">
+
+                    <span id="industryNumber">01</span>
+
+                    <h3 id="industryTitle">
+                        Mining
+                    </h3>
+
+                    <p id="industryDescription">
+                        Supporting energy-intensive mining operations with
+                        structured fuel procurement and dependable supply
+                        solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROCESS ================= -->
+
+<section class="section process-section">
+
+    <div class="container">
+
+        <div class="section-heading centered reveal">
+
+            <div class="eyebrow dark">
+                <span></span>
+                OUR PROCESS
+            </div>
+
+            <h2>
+                Structured from
+                <em>requirement to delivery.</em>
+            </h2>
+
+            <p>
+                A clear procurement process designed to keep every
+                requirement moving forward.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-step reveal">
+
+                <span>01</span>
+
+                <h3>Requirement</h3>
+
+                <p>
+                    Understand the product, volume, destination and
+                    timeline.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step reveal">
+
+                <span>02</span>
+
+                <h3>Assessment</h3>
+
+                <p>
+                    Evaluate the commercial and supply requirements.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step reveal">
+
+                <span>03</span>
+
+                <h3>Sourcing</h3>
+
+                <p>
+                    Identify suitable supply opportunities and
+                    counterparties.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step reveal">
+
+                <span>04</span>
+
+                <h3>Structuring</h3>
+
+                <p>
+                    Develop the appropriate commercial pathway.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step reveal">
+
+                <span>05</span>
+
+                <h3>Verification</h3>
+
+                <p>
+                    Coordinate required documentation and verification.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step reveal">
+
+                <span>06</span>
+
+                <h3>Execution</h3>
+
+                <p>
+                    Progress the transaction toward fulfilment and
+                    delivery.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= VALUES ================= -->
+
+<section class="values-section">
+
+    <div class="container">
+
+        <div class="values-heading reveal">
+
+            <div class="eyebrow">
+                <span></span>
+                THE MERIDIAN STANDARD
+            </div>
+
+            <h2>
+                Global reach.
+                <br>
+                Local understanding.
+                <br>
+                <em>One standard.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="values-grid">
+
+            <div class="value reveal">
+                <strong>01</strong>
+                <h3>Integrity</h3>
+                <p>
+                    Transparent and responsible commercial engagement.
+                </p>
+            </div>
+
+            <div class="value reveal">
+                <strong>02</strong>
+                <h3>Reliability</h3>
+                <p>
+                    Supply solutions built around dependable execution.
+                </p>
+            </div>
+
+            <div class="value reveal">
+                <strong>03</strong>
+                <h3>Global Reach</h3>
+                <p>
+                    Connections across international energy markets.
+                </p>
+            </div>
+
+            <div class="value reveal">
+                <strong>04</strong>
+                <h3>Local Insight</h3>
+                <p>
+                    Understanding the realities of Southern African
+                    business.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INSIGHTS ================= -->
+
+<section class="section insights-section">
+
+    <div class="container">
+
+        <div class="section-top reveal">
+
+            <div>
+
+                <div class="eyebrow dark">
+                    <span></span>
+                    MARKET INSIGHTS
+                </div>
+
+                <h2>
+                    Understanding the
+                    <em>market behind the market.</em>
+                </h2>
+
+            </div>
+
+            <a href="insights.html" class="text-link">
+                View all insights
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <div class="insight-grid">
+
+            <article class="insight-card reveal">
+
+                <div class="insight-image insight-one"></div>
+
+                <div class="insight-content">
+
+                    <small>MARKETS / ENERGY</small>
+
+                    <h3>
+                        Understanding global energy market dynamics
+                    </h3>
+
+                    <p>
+                        How changing international conditions influence
+                        procurement and supply decisions.
+                    </p>
+
+                    <a href="insights.html">
+                        Read insight →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="insight-card reveal">
+
+                <div class="insight-image insight-two"></div>
+
+                <div class="insight-content">
+
+                    <small>PROCUREMENT / SOUTH AFRICA</small>
+
+                    <h3>
+                        Strategic fuel procurement in Southern Africa
+                    </h3>
+
+                    <p>
+                        The importance of structured sourcing and
+                        dependable supply relationships.
+                    </p>
+
+                    <a href="insights.html">
+                        Read insight →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="insight-card reveal">
+
+                <div class="insight-image insight-three"></div>
+
+                <div class="insight-content">
+
+                    <small>TRADE / SUPPLY</small>
+
+                    <h3>
+                        Building resilient energy supply chains
+                    </h3>
+
+                    <p>
+                        What businesses should consider when managing
+                        energy supply requirements.
+                    </p>
+
+                    <a href="insights.html">
+                        Read insight →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="cta-background"></div>
+
+    <div class="cta-overlay"></div>
+
+    <div class="container cta-content reveal">
+
+        <div class="eyebrow">
+            <span></span>
+            START A CONVERSATION
+        </div>
+
+        <h2>
+            Have an energy
+            <em>requirement?</em>
+        </h2>
+
+        <p>
+            Tell us what you need, where you need it and when.
+            Our team will assess your requirement and determine
+            the appropriate procurement pathway.
+        </p>
+
+        <a href="quote.html" class="button button-gold">
+            Submit an RFQ
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand">
+
+                    <div class="brand-symbol">
+                        M
+                    </div>
+
+                    <div class="brand-text">
+                        <strong>MERIDIAN</strong>
+                        <span>ENERGY MANAGEMENT</span>
+                    </div>
+
+                </a>
+
+                <p>
+                    Strategic energy procurement, sourcing and supply
+                    solutions for a changing world.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="about.html">About</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="products.html">Products</a>
+                <a href="industries.html">Industries</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Company</h4>
+
+                <a href="process.html">Process</a>
+                <a href="insights.html">Insights</a>
+                <a href="contact.html">Contact</a>
+                <a href="quote.html">Request a Quote</a>
+
+            </div>
+
+
+            <div class="footer-column footer-contact">
+
+                <h4>Contact</h4>
+
+                <a href="tel:0847345588">
+                    084 734 5588
+                </a>
+
+                <a href="mailto:trading@meridianenergymanagement.com">
+                    trading@meridianenergymanagement.com
+                </a>
+
+                <address>
+                    106 Adderley Street<br>
+                    Cape Town<br>
+                    South Africa
+                </address>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="currentYear"></span> Meridian Energy Management.
+                All rights reserved.
+            </span>
+
+            <div>
+
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
