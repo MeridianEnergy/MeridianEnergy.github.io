@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Our Process | Meridian Energy Management</title>
+<meta name="description" content="Explore the Meridian Energy Management procurement process, from requirement assessment and strategic sourcing through supplier coordination, verification, transaction support and delivery.">
+<meta name="author" content="Meridian Energy Management">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--black:#07090a;
+--black2:#0d1012;
+--black3:#14181b;
+--black4:#1c2124;
+--white:#f5f4f0;
+--grey:#969da0;
+--grey-light:#c8cccd;
+--gold:#d6a545;
+--gold-light:#edc66d;
+--gold-dark:#9c7425;
+--border:rgba(255,255,255,.09);
+--gold-border:rgba(214,165,69,.30);
+--max:1240px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+background:var(--black);
+color:var(--white);
+font-family:"DM Sans",sans-serif;
+line-height:1.65;
+overflow-x:hidden;
+}
+
+a{
+color:inherit;
+text-decoration:none;
+}
+
+button,input,textarea,select{
+font:inherit;
+}
+
+.container{
+width:min(var(--max),calc(100% - 48px));
+margin:auto;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:rgba(7,9,10,.87);
+backdrop-filter:blur(18px);
+border-bottom:1px solid var(--border);
+transition:.3s;
+}
+
+header.scrolled{
+background:rgba(7,9,10,.97);
+box-shadow:0 10px 40px rgba(0,0,0,.35);
+}
+
+.nav{
+height:82px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:13px;
+}
+
+.brand-mark{
+width:40px;
+height:40px;
+border:1px solid var(--gold);
+display:grid;
+place-items:center;
+color:var(--gold);
+font-family:Manrope,sans-serif;
+font-weight:800;
+font-size:17px;
+position:relative;
+}
+
+.brand-mark:after{
+content:"";
+position:absolute;
+width:9px;
+height:9px;
+background:var(--gold);
+right:-4px;
+bottom:-4px;
+}
+
+.brand-name{
+font-family:Manrope,sans-serif;
+font-weight:800;
+font-size:14px;
+letter-spacing:2px;
+}
+
+.brand-name span{
+display:block;
+font-size:8px;
+color:var(--gold);
+letter-spacing:3px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+align-items:center;
+}
+
+nav a{
+font-size:13px;
+color:var(--grey-light);
+transition:.25s;
+}
+
+nav a:hover,
+nav a.active{
+color:var(--gold-light);
+}
+
+.nav-cta{
+border:1px solid var(--gold);
+padding:11px 17px;
+color:var(--white)!important;
+}
+
+.nav-cta:hover{
+background:var(--gold);
+color:var(--black)!important;
+}
+
+.menu-toggle{
+display:none;
+background:none;
+border:0;
+color:var(--white);
+font-size:26px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+min-height:78vh;
+padding:170px 0 105px;
+display:flex;
+align-items:center;
+position:relative;
+overflow:hidden;
+background:
+linear-gradient(90deg,rgba(7,9,10,.97),rgba(7,9,10,.78),rgba(7,9,10,.38)),
+linear-gradient(0deg,var(--black),transparent 50%),
+url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=2200&q=85") center/cover;
+}
+
+.hero:after{
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(90deg,rgba(214,165,69,.035) 1px,transparent 1px),
+linear-gradient(rgba(214,165,69,.035) 1px,transparent 1px);
+background-size:80px 80px;
+mask-image:linear-gradient(to bottom,black,transparent);
+pointer-events:none;
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+max-width:900px;
+}
+
+.eyebrow{
+color:var(--gold);
+font-size:11px;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:4px;
+margin-bottom:20px;
+}
+
+h1,h2,h3{
+font-family:Manrope,sans-serif;
+line-height:1.08;
+}
+
+h1{
+font-size:clamp(48px,7vw,92px);
+letter-spacing:-4px;
+margin-bottom:28px;
+}
+
+.hero p{
+font-size:18px;
+color:var(--grey-light);
+max-width:720px;
+}
+
+.hero-bottom{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+z-index:2;
+border-top:1px solid var(--border);
+background:rgba(7,9,10,.58);
+}
+
+.hero-strip{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+
+.hero-strip div{
+padding:17px 20px;
+border-right:1px solid var(--border);
+font-size:10px;
+color:var(--grey);
+text-transform:uppercase;
+letter-spacing:2px;
+}
+
+.hero-strip div:first-child{
+color:var(--gold-light);
+}
+
+/* SECTIONS */
+
+section{
+padding:115px 0;
+border-bottom:1px solid var(--border);
+}
+
+.section-head{
+display:flex;
+justify-content:space-between;
+align-items:flex-end;
+gap:50px;
+margin-bottom:60px;
+}
+
+.section-head h2{
+font-size:clamp(38px,4vw,58px);
+letter-spacing:-2.5px;
+max-width:720px;
+}
+
+.section-head p{
+max-width:450px;
+color:var(--grey);
+font-size:15px;
+}
+
+/* INTRO */
+
+.intro-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:90px;
+align-items:center;
+}
+
+.intro-title{
+font-size:clamp(38px,4vw,58px);
+letter-spacing:-2px;
+}
+
+.intro-title span{
+color:var(--gold);
+}
+
+.intro-copy{
+font-size:17px;
+color:var(--grey-light);
+}
+
+.intro-copy p+p{
+margin-top:20px;
+}
+
+/* PROCESS */
+
+.process-wrapper{
+position:relative;
+}
+
+.process-line{
+position:absolute;
+left:28px;
+top:30px;
+bottom:30px;
+width:1px;
+background:linear-gradient(
+to bottom,
+transparent,
+var(--gold),
+var(--gold),
+transparent
+);
+}
+
+.process-step{
+position:relative;
+display:grid;
+grid-template-columns:58px 1fr 280px;
+gap:35px;
+padding:0 0 70px;
+}
+
+.process-step:last-child{
+padding-bottom:0;
+}
+
+.step-number{
+width:56px;
+height:56px;
+border:1px solid var(--gold);
+background:var(--black);
+display:grid;
+place-items:center;
+font-family:Manrope,sans-serif;
+font-size:13px;
+font-weight:700;
+color:var(--gold-light);
+position:relative;
+z-index:2;
+}
+
+.step-main h3{
+font-size:28px;
+letter-spacing:-1px;
+margin:3px 0 13px;
+}
+
+.step-main p{
+color:var(--grey-light);
+font-size:15px;
+max-width:650px;
+}
+
+.step-side{
+border-left:1px solid var(--border);
+padding-left:25px;
+}
+
+.step-side span{
+display:block;
+font-size:10px;
+text-transform:uppercase;
+letter-spacing:2px;
+color:var(--gold);
+margin-bottom:10px;
+}
+
+.step-side p{
+font-size:12px;
+color:var(--grey);
+}
+
+/* DETAIL */
+
+.detail{
+background:var(--black2);
+}
+
+.detail-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+.detail-image{
+min-height:570px;
+border:1px solid var(--border);
+position:relative;
+background:
+linear-gradient(180deg,transparent 30%,rgba(7,9,10,.94)),
+url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1500&q=85") center/cover;
+}
+
+.image-label{
+position:absolute;
+bottom:30px;
+left:30px;
+right:30px;
+}
+
+.image-label small{
+display:block;
+color:var(--gold);
+font-size:10px;
+text-transform:uppercase;
+letter-spacing:3px;
+margin-bottom:7px;
+}
+
+.image-label strong{
+font-family:Manrope,sans-serif;
+font-size:28px;
+}
+
+.detail-content h2{
+font-size:clamp(38px,4vw,58px);
+letter-spacing:-2px;
+margin-bottom:20px;
+}
+
+.detail-content>p{
+color:var(--grey-light);
+margin-bottom:30px;
+}
+
+.check-list{
+list-style:none;
+border-top:1px solid var(--border);
+}
+
+.check-list li{
+padding:16px 0;
+border-bottom:1px solid var(--border);
+display:flex;
+gap:14px;
+color:var(--grey-light);
+font-size:14px;
+}
+
+.check-list li:before{
+content:"✓";
+color:var(--gold);
+font-weight:700;
+}
+
+/* REQUIREMENTS */
+
+.requirements{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:1px;
+background:var(--border);
+border:1px solid var(--border);
+}
+
+.requirement{
+background:var(--black2);
+padding:38px 30px;
+min-height:250px;
+}
+
+.requirement-number{
+color:var(--gold);
+font-size:11px;
+letter-spacing:2px;
+}
+
+.requirement h3{
+font-size:21px;
+margin:42px 0 12px;
+}
+
+.requirement p{
+font-size:13px;
+color:var(--grey);
+}
+
+/* TRANSACTION FLOW */
+
+.flow{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+border:1px solid var(--border);
+background:var(--border);
+}
+
+.flow-item{
+background:var(--black2);
+padding:30px 20px;
+position:relative;
+min-height:170px;
+}
+
+.flow-item:not(:last-child):after{
+content:"→";
+position:absolute;
+right:-10px;
+top:50%;
+transform:translateY(-50%);
+z-index:3;
+color:var(--gold);
+background:var(--black);
+width:20px;
+height:20px;
+display:grid;
+place-items:center;
+font-size:12px;
+}
+
+.flow-number{
+color:var(--gold);
+font-size:10px;
+letter-spacing:2px;
+}
+
+.flow-item h3{
+font-size:17px;
+margin-top:30px;
+}
+
+/* CTA */
+
+.cta{
+background:
+radial-gradient(circle at 75% 45%,rgba(214,165,69,.12),transparent 30%),
+var(--black2);
+}
+
+.cta-box{
+border:1px solid var(--gold-border);
+padding:60px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+}
+
+.cta-box h2{
+font-size:clamp(37px,4vw,58px);
+letter-spacing:-2px;
+max-width:720px;
+}
+
+.cta-box p{
+color:var(--grey);
+max-width:620px;
+margin-top:15px;
+}
+
+.button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:15px 23px;
+border:1px solid var(--gold);
+text-transform:uppercase;
+font-size:11px;
+font-weight:700;
+letter-spacing:1.7px;
+white-space:nowrap;
+transition:.3s;
+}
+
+.button.primary{
+background:var(--gold);
+color:var(--black);
+}
+
+.button.primary:hover{
+background:var(--gold-light);
+}
+
+/* FOOTER */
+
+footer{
+padding:70px 0 30px;
+background:#050708;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.5fr 1fr 1fr 1fr;
+gap:50px;
+padding-bottom:60px;
+border-bottom:1px solid var(--border);
+}
+
+.footer-brand p{
+color:var(--grey);
+font-size:13px;
+max-width:370px;
+margin-top:20px;
+}
+
+footer h4{
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:2px;
+margin-bottom:18px;
+}
+
+footer ul{
+list-style:none;
+}
+
+footer li{
+margin-bottom:9px;
+}
+
+footer li a{
+color:var(--grey);
+font-size:13px;
+transition:.2s;
+}
+
+footer li a:hover{
+color:var(--gold-light);
+}
+
+.footer-bottom{
+padding-top:25px;
+display:flex;
+justify-content:space-between;
+gap:30px;
+font-size:11px;
+color:#687074;
+}
+
+/* ANIMATION */
+
+.reveal{
+opacity:0;
+transform:translateY(25px);
+transition:opacity .8s ease,transform .8s ease;
+}
+
+.reveal.visible{
+opacity:1;
+transform:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1050px){
+
+nav ul{
+gap:14px;
+}
+
+.process-step{
+grid-template-columns:58px 1fr;
+}
+
+.step-side{
+grid-column:2;
+border-left:0;
+border-top:1px solid var(--border);
+padding:18px 0 0;
+}
+
+.flow{
+grid-template-columns:repeat(3,1fr);
+}
+
+.flow-item:nth-child(3):after{
+display:none;
+}
+
+}
+
+@media(max-width:900px){
+
+.intro-grid,
+.detail-grid{
+grid-template-columns:1fr;
+gap:50px;
+}
+
+.requirements{
+grid-template-columns:repeat(2,1fr);
+}
+
+.footer-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:800px){
+
+.container{
+width:min(var(--max),calc(100% - 32px));
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+position:absolute;
+top:82px;
+left:0;
+width:100%;
+background:rgba(7,9,10,.98);
+border-bottom:1px solid var(--border);
+}
+
+nav.open{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+align-items:stretch;
+padding:20px;
+gap:0;
+}
+
+nav a{
+display:block;
+padding:14px 5px;
+border-bottom:1px solid var(--border);
+}
+
+.nav-cta{
+margin-top:10px;
+text-align:center;
+}
+
+.hero{
+min-height:720px;
+padding-bottom:130px;
+}
+
+.hero-strip{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero-strip div{
+padding:12px;
+}
+
+.flow{
+grid-template-columns:repeat(2,1fr);
+}
+
+.flow-item:after{
+display:none!important;
+}
+
+.cta-box{
+padding:35px 25px;
+flex-direction:column;
+align-items:flex-start;
+}
+
+}
+
+@media(max-width:600px){
+
+section{
+padding:80px 0;
+}
+
+.section-head{
+display:block;
+margin-bottom:40px;
+}
+
+.section-head p{
+margin-top:20px;
+}
+
+h1{
+font-size:48px;
+letter-spacing:-2.5px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.process-line{
+left:23px;
+}
+
+.process-step{
+grid-template-columns:48px 1fr;
+gap:20px;
+padding-bottom:55px;
+}
+
+.step-number{
+width:46px;
+height:46px;
+}
+
+.step-main h3{
+font-size:23px;
+}
+
+.step-side{
+grid-column:2;
+}
+
+.detail-image{
+min-height:400px;
+}
+
+.requirements{
+grid-template-columns:1fr;
+}
+
+.flow{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.footer-bottom{
+flex-direction:column;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header id="header">
+
+<div class="container nav">
+
+<a href="index.html" class="brand">
+<div class="brand-mark">M</div>
+<div class="brand-name">
+MERIDIAN
+<span>ENERGY MANAGEMENT</span>
+</div>
+</a>
+
+<button class="menu-toggle" id="menuToggle">☰</button>
+
+<nav id="mainNav">
+<ul>
+<li><a href="about.html">About</a></li>
+<li><a href="solutions.html">Solutions</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="industries.html">Industries</a></li>
+<li><a href="process.html" class="active">Process</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="quote.html" class="nav-cta">Request a Quote</a></li>
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-content reveal">
+
+<div class="eyebrow">Our Process • Strategic Procurement</div>
+
+<h1>
+From requirement<br>
+to <span style="color:var(--gold)">supply.</span>
+</h1>
+
+<p>
+A structured procurement approach designed to understand the
+requirement, identify appropriate supply opportunities and
+coordinate the transaction through to execution.
+</p>
+
+</div>
+
+<div class="hero-bottom">
+
+<div class="container hero-strip">
+<div>Requirement</div>
+<div>Assessment</div>
+<div>Sourcing</div>
+<div>Execution</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section>
+
+<div class="container intro-grid">
+
+<div class="reveal">
+
+<div class="eyebrow">A Structured Approach</div>
+
+<h2 class="intro-title">
+Energy procurement<br>
+shouldn't be a<br>
+<span>black box.</span>
+</h2>
+
+</div>
+
+<div class="intro-copy reveal">
+
+<p>
+International energy transactions can involve multiple parties,
+commercial considerations, product specifications, logistics
+requirements and documentation.
+</p>
+
+<p>
+Meridian brings these moving parts into a structured procurement
+process so that the requirement can be assessed before the most
+appropriate sourcing route is pursued.
+</p>
+
+<p>
+Every transaction is different. Our process is therefore designed
+to provide structure without forcing every requirement into the
+same model.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+
+<div class="eyebrow">The Meridian Process</div>
+
+<h2>
+Six stages from requirement to execution.
+</h2>
+
+</div>
+
+<p>
+Our process provides a clear framework for procurement while
+allowing the commercial and logistical details of each requirement
+to be handled individually.
+</p>
+
+</div>
+
+
+<div class="process-wrapper">
+
+<div class="process-line"></div>
+
+
+<!-- 01 -->
+
+<div class="process-step reveal">
+
+<div class="step-number">01</div>
+
+<div class="step-main">
+
+<h3>Requirement</h3>
+
+<p>
+The process begins with a clear understanding of what the buyer
+requires. Product, quantity, destination, timeline, specification
+and other relevant requirements are established.
+</p>
+
+</div>
+
+<div class="step-side">
+
+<span>What we establish</span>
+
+<p>
+Product • Volume • Destination • Timeline • Specification
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 02 -->
+
+<div class="process-step reveal">
+
+<div class="step-number">02</div>
+
+<div class="step-main">
+
+<h3>Assessment</h3>
+
+<p>
+The requirement is reviewed to determine the appropriate
+procurement route. Market conditions, supply availability,
+logistics and commercial considerations may all influence
+the sourcing strategy.
+</p>
+
+</div>
+
+<div class="step-side">
+
+<span>What we assess</span>
+
+<p>
+Market • Availability • Logistics • Commercial Requirements
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 03 -->
+
+<div class="process-step reveal">
+
+<div class="step-number">03</div>
+
+<div class="step-main">
+
+<h3>Strategic Sourcing</h3>
+
+<p>
+Appropriate supplier and supply-side opportunities are identified
+through Meridian's procurement network and international market
+relationships.
+</p>
+
+</div>
+
+<div class="step-side">
+
+<span>What we source</span>
+
+<p>
+Product • Supplier • Origin • Supply Route
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 04 -->
+
+<div class="process-step reveal">
+
+<div class="step-number">04</div>
+
+<div class="step-main">
+
+<h3>Structuring &amp; Verification</h3>
+
+<p>
+Commercial requirements, documentation and transaction considerations
+are coordinated between the relevant parties. Information is reviewed
+as part of the transaction process.
+</p>
+
+</div>
+
+<div class="step-side">
+
+<span>What we coordinate</span>
+
+<p>
+Documentation • Commercial Terms • Counterparties • Requirements
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 05 -->
+
+<div class="process-step reveal">
+
+<div class="step-number">05</div>
+
+<div class="step-main">
+
+<h3>Transaction Support</h3>
+
+<p>
+Once an appropriate supply opportunity has been identified,
+Meridian assists with communication and coordination between
+the relevant parties as the transaction progresses.
+</p>
+
+</div>
+
+<div class="step-side">
+
+<span>What we support</span>
+
+<p>
+Communication • Documentation • Coordination • Progress
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 06 -->
+
+<div class="process-step reveal">
+
+<div class="step-number">06</div>
+
+<div class="step-main">
+
+<h3>Execution &amp; Delivery</h3>
+
+<p>
+The transaction moves into execution, with delivery and logistics
+requirements coordinated according to the agreed commercial
+structure and destination.
+</p>
+
+</div>
+
+<div class="step-side">
+
+<span>Final stage</span>
+
+<p>
+Execution • Logistics • Delivery • Completion
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REQUIREMENT -->
+
+<section class="detail">
+
+<div class="container detail-grid">
+
+<div class="detail-image reveal">
+
+<div class="image-label">
+
+<small>Step One</small>
+
+<strong>Everything starts with the requirement.</strong>
+
+</div>
+
+</div>
+
+
+<div class="detail-content reveal">
+
+<div class="eyebrow">Start With Clarity</div>
+
+<h2>
+The more precise the requirement, the better the procurement process.
+</h2>
+
+<p>
+A well-defined requirement allows Meridian to assess the available
+supply routes more effectively and identify the factors that could
+affect pricing, availability and delivery.
+</p>
+
+<ul class="check-list">
+
+<li>Product and grade required</li>
+
+<li>Required quantity or volume</li>
+
+<li>Delivery destination</li>
+
+<li>Required delivery timeline</li>
+
+<li>Technical or quality specifications</li>
+
+<li>Commercial or logistical considerations</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TRANSACTION STRUCTURE -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+
+<div class="eyebrow">Transaction Framework</div>
+
+<h2>
+Clear stages. Clear communication.
+</h2>
+
+</div>
+
+<p>
+The exact documentation and transaction structure can vary according
+to the commodity, counterparties, jurisdiction and commercial
+requirements involved.
+</p>
+
+</div>
+
+
+<div class="flow">
+
+<div class="flow-item reveal">
+
+<div class="flow-number">01</div>
+
+<h3>Requirement</h3>
+
+</div>
+
+<div class="flow-item reveal">
+
+<div class="flow-number">02</div>
+
+<h3>Market Review</h3>
+
+</div>
+
+<div class="flow-item reveal">
+
+<div class="flow-number">03</div>
+
+<h3>Supply Opportunity</h3>
+
+</div>
+
+<div class="flow-item reveal">
+
+<div class="flow-number">04</div>
+
+<h3>Commercial Review</h3>
+
+</div>
+
+<div class="flow-item reveal">
+
+<div class="flow-number">05</div>
+
+<h3>Transaction</h3>
+
+</div>
+
+<div class="flow-item reveal">
+
+<div class="flow-number">06</div>
+
+<h3>Delivery</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REQUIREMENTS -->
+
+<section class="detail">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+
+<div class="eyebrow">What We Need From You</div>
+
+<h2>
+Give us the information needed to move the requirement forward.
+</h2>
+
+</div>
+
+<p>
+You do not need to know the entire procurement process before
+approaching Meridian. Start with the fundamentals and our team
+can help structure the requirement.
+</p>
+
+</div>
+
+
+<div class="requirements">
+
+<div class="requirement reveal">
+
+<div class="requirement-number">01</div>
+
+<h3>Product</h3>
+
+<p>
+Tell us which energy product you require, including grade or
+specification where applicable.
+</p>
+
+</div>
+
+
+<div class="requirement reveal">
+
+<div class="requirement-number">02</div>
+
+<h3>Volume</h3>
+
+<p>
+Provide the required quantity, estimated consumption or recurring
+volume where known.
+</p>
+
+</div>
+
+
+<div class="requirement reveal">
+
+<div class="requirement-number">03</div>
+
+<h3>Destination</h3>
+
+<p>
+Tell us where the product needs to be delivered or where the
+transaction is intended to take place.
+</p>
+
+</div>
+
+
+<div class="requirement reveal">
+
+<div class="requirement-number">04</div>
+
+<h3>Timeline</h3>
+
+<p>
+Let us know when the product is required and whether the
+requirement is once-off or recurring.
+</p>
+
+</div>
+
+
+<div class="requirement reveal">
+
+<div class="requirement-number">05</div>
+
+<h3>Company Details</h3>
+
+<p>
+Basic buyer information helps us understand the commercial
+context and route the requirement appropriately.
+</p>
+
+</div>
+
+
+<div class="requirement reveal">
+
+<div class="requirement-number">06</div>
+
+<h3>Additional Requirements</h3>
+
+<p>
+Include any specifications, logistics, documentation or other
+conditions relevant to the procurement requirement.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box reveal">
+
+<div>
+
+<div class="eyebrow">Ready To Start?</div>
+
+<h2>
+Tell us what you're looking for.
+</h2>
+
+<p>
+Submit your energy requirement and provide as much detail as
+you have available. Meridian will review the requirement and
+determine the appropriate procurement route.
+</p>
+
+</div>
+
+<a href="quote.html" class="button primary">
+Submit Requirement →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-brand">
+
+<a href="index.html" class="brand">
+
+<div class="brand-mark">M</div>
+
+<div class="brand-name">
+MERIDIAN
+<span>ENERGY MANAGEMENT</span>
+</div>
+
+</a>
+
+<p>
+Strategic energy procurement and supply solutions connecting
+qualified buyers with established global energy markets.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Company</h4>
+
+<ul>
+<li><a href="about.html">About Meridian</a></li>
+<li><a href="solutions.html">Solutions</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="industries.html">Industries</a></li>
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Process</h4>
+
+<ul>
+<li><a href="process.html">Our Process</a></li>
+<li><a href="quote.html">Request a Quote</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Contact</h4>
+
+<ul>
+<li><a href="tel:0847345588">084 734 5588</a></li>
+<li><a href="mailto:trading@meridianenergymanagement.com">trading@meridianenergymanagement.com</a></li>
+<li>106 Adderley Street</li>
+<li>Cape Town, South Africa</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<div>
+© <span id="year"></span> Meridian Energy Management. All rights reserved.
+</div>
+
+<div>
+<a href="privacy.html">Privacy</a>
+&nbsp; / &nbsp;
+<a href="terms.html">Terms</a>
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+const header=document.getElementById("header");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>30){
+header.classList.add("scrolled");
+}else{
+header.classList.remove("scrolled");
+}
+
+});
+
+
+const menuToggle=document.getElementById("menuToggle");
+const mainNav=document.getElementById("mainNav");
+
+menuToggle.addEventListener("click",()=>{
+
+mainNav.classList.toggle("open");
+
+});
+
+
+document.querySelectorAll("#mainNav a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+mainNav.classList.remove("open");
+
+});
+
+});
+
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("visible");
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+},{threshold:.12});
+
+
+document.querySelectorAll(".reveal").forEach(el=>{
+
+observer.observe(el);
+
+});
+
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
