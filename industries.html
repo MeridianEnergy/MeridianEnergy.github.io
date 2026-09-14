@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Industries | Meridian Energy Management</title>
+<meta name="description" content="Meridian Energy Management provides strategic energy procurement and supply solutions for mining, logistics, agriculture, industrial, aviation and maritime operations.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--black:#07090a;
+--black2:#0d1012;
+--black3:#14181b;
+--white:#f5f4f0;
+--grey:#969da0;
+--grey-light:#c8cccd;
+--gold:#d6a545;
+--gold-light:#edc66d;
+--border:rgba(255,255,255,.09);
+--gold-border:rgba(214,165,69,.3);
+--max:1240px
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+background:var(--black);
+color:var(--white);
+font-family:"DM Sans",sans-serif;
+line-height:1.65;
+overflow-x:hidden
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.container{width:min(var(--max),calc(100% - 48px));margin:auto}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:rgba(7,9,10,.86);
+backdrop-filter:blur(18px);
+border-bottom:1px solid var(--border);
+transition:.3s
+}
+header.scrolled{background:rgba(7,9,10,.97);box-shadow:0 10px 40px #0008}
+
+.nav{
+height:82px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px
+}
+
+.brand{display:flex;align-items:center;gap:13px}
+.brand-mark{
+width:40px;height:40px;
+border:1px solid var(--gold);
+display:grid;place-items:center;
+color:var(--gold);
+font-family:Manrope,sans-serif;
+font-weight:800;
+position:relative
+}
+.brand-mark:after{
+content:"";
+position:absolute;
+width:9px;height:9px;
+background:var(--gold);
+right:-4px;bottom:-4px
+}
+.brand-name{
+font-family:Manrope,sans-serif;
+font-weight:800;
+font-size:14px;
+letter-spacing:2px
+}
+.brand-name span{
+display:block;
+font-size:8px;
+color:var(--gold);
+letter-spacing:3px
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+align-items:center
+}
+nav a{
+font-size:13px;
+color:var(--grey-light);
+transition:.25s
+}
+nav a:hover,nav a.active{color:var(--gold-light)}
+.nav-cta{
+border:1px solid var(--gold);
+padding:11px 17px;
+color:var(--white)!important
+}
+.nav-cta:hover{background:var(--gold);color:var(--black)!important}
+
+.menu-toggle{
+display:none;
+background:none;
+border:0;
+color:white;
+font-size:26px;
+cursor:pointer
+}
+
+.hero{
+min-height:78vh;
+padding:170px 0 105px;
+display:flex;
+align-items:center;
+position:relative;
+overflow:hidden;
+background:
+linear-gradient(90deg,rgba(7,9,10,.96),rgba(7,9,10,.73),rgba(7,9,10,.38)),
+linear-gradient(0deg,var(--black),transparent 50%),
+url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=2200&q=85") center/cover
+}
+
+.hero:after{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(90deg,rgba(214,165,69,.035) 1px,transparent 1px),linear-gradient(rgba(214,165,69,.035) 1px,transparent 1px);
+background-size:80px 80px;
+mask-image:linear-gradient(to bottom,black,transparent)
+}
+
+.hero-content{position:relative;z-index:1;max-width:850px}
+
+.eyebrow{
+color:var(--gold);
+font-size:11px;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:4px;
+margin-bottom:20px
+}
+
+h1,h2,h3{
+font-family:Manrope,sans-serif;
+line-height:1.08
+}
+
+h1{
+font-size:clamp(48px,7vw,92px);
+letter-spacing:-4px;
+margin-bottom:28px
+}
+.hero p{
+font-size:18px;
+color:var(--grey-light);
+max-width:720px
+}
+
+.hero-bottom{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+z-index:2;
+border-top:1px solid var(--border);
+background:#07090a99
+}
+
+.hero-strip{
+display:grid;
+grid-template-columns:repeat(4,1fr)
+}
+.hero-strip div{
+padding:17px 20px;
+border-right:1px solid var(--border);
+font-size:10px;
+color:var(--grey);
+text-transform:uppercase;
+letter-spacing:2px
+}
+.hero-strip div:first-child{color:var(--gold-light)}
+
+section{
+padding:115px 0;
+border-bottom:1px solid var(--border)
+}
+
+.section-head{
+display:flex;
+justify-content:space-between;
+align-items:end;
+gap:50px;
+margin-bottom:60px
+}
+.section-head h2{
+font-size:clamp(38px,4vw,58px);
+letter-spacing:-2.5px;
+max-width:700px
+}
+.section-head p{
+max-width:440px;
+color:var(--grey);
+font-size:15px
+}
+
+.intro-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:90px
+}
+.intro-title{
+font-size:clamp(38px,4vw,58px);
+letter-spacing:-2px
+}
+.intro-title span{color:var(--gold)}
+.intro-copy{
+font-size:17px;
+color:var(--grey-light)
+}
+.intro-copy p+p{margin-top:20px}
+
+.industry-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:1px;
+background:var(--border);
+border:1px solid var(--border)
+}
+
+.industry-card{
+min-height:390px;
+padding:38px;
+background:var(--black2);
+position:relative;
+overflow:hidden;
+transition:.4s;
+display:flex;
+flex-direction:column;
+justify-content:flex-end
+}
+
+.industry-card:hover{
+background:var(--black3);
+transform:translateY(-3px);
+z-index:2
+}
+
+.industry-card:before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(180deg,transparent 20%,rgba(7,9,10,.96) 100%);
+z-index:1
+}
+
+.industry-card.mining{
+background:
+linear-gradient(180deg,transparent,rgba(7,9,10,.98)),
+url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80") center/cover
+}
+.industry-card.logistics{
+background:
+linear-gradient(180deg,transparent,rgba(7,9,10,.98)),
+url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80") center/cover
+}
+.industry-card.agriculture{
+background:
+linear-gradient(180deg,transparent,rgba(7,9,10,.98)),
+url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1200&q=80") center/cover
+}
+.industry-card.industrial{
+background:
+linear-gradient(180deg,transparent,rgba(7,9,10,.98)),
+url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1200&q=80") center/cover
+}
+.industry-card.aviation{
+background:
+linear-gradient(180deg,transparent,rgba(7,9,10,.98)),
+url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80") center/cover
+}
+.industry-card.maritime{
+background:
+linear-gradient(180deg,transparent,rgba(7,9,10,.98)),
+url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1200&q=80") center/cover
+}
+
+.industry-content{
+position:relative;
+z-index:2
+}
+
+.industry-number{
+position:absolute;
+top:30px;
+left:32px;
+z-index:2;
+font-size:11px;
+letter-spacing:3px;
+color:var(--gold)
+}
+
+.industry-card h3{
+font-size:32px;
+letter-spacing:-1px;
+margin-bottom:13px
+}
+
+.industry-card p{
+color:var(--grey-light);
+font-size:14px;
+max-width:540px
+}
+
+.industry-tags{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-top:20px
+}
+.industry-tags span{
+border:1px solid #ffffff20;
+padding:6px 9px;
+font-size:9px;
+letter-spacing:1.4px;
+text-transform:uppercase;
+color:#d5d8d8
+}
+
+.dark-section{background:var(--black2)}
+
+.capability-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:1px;
+background:var(--border);
+border:1px solid var(--border)
+}
+
+.capability{
+background:var(--black2);
+padding:35px 30px;
+min-height:250px
+}
+.capability-number{
+color:var(--gold);
+font-size:11px;
+letter-spacing:2px
+}
+.capability h3{
+font-size:21px;
+margin:42px 0 12px
+}
+.capability p{
+font-size:13px;
+color:var(--grey)
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+border:1px solid var(--border);
+background:var(--border)
+}
+.stat{
+background:var(--black2);
+padding:40px 30px
+}
+.stat strong{
+font-family:Manrope,sans-serif;
+font-size:38px;
+color:var(--gold-light)
+}
+.stat span{
+display:block;
+color:var(--grey);
+font-size:12px;
+margin-top:7px
+}
+
+.cta{
+background:
+radial-gradient(circle at 75% 50%,rgba(214,165,69,.12),transparent 30%),
+var(--black2)
+}
+.cta-box{
+border:1px solid var(--gold-border);
+padding:60px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px
+}
+.cta-box h2{
+font-size:clamp(37px,4vw,58px);
+letter-spacing:-2px;
+max-width:720px
+}
+.cta-box p{
+color:var(--grey);
+max-width:620px;
+margin-top:15px
+}
+
+.button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:15px 23px;
+border:1px solid var(--gold);
+text-transform:uppercase;
+font-size:11px;
+font-weight:700;
+letter-spacing:1.7px;
+white-space:nowrap;
+transition:.3s
+}
+.button.primary{
+background:var(--gold);
+color:var(--black)
+}
+.button.primary:hover{background:var(--gold-light)}
+
+footer{
+padding:70px 0 30px;
+background:#050708
+}
+.footer-grid{
+display:grid;
+grid-template-columns:1.5fr 1fr 1fr 1fr;
+gap:50px;
+padding-bottom:60px;
+border-bottom:1px solid var(--border)
+}
+.footer-brand p{
+color:var(--grey);
+font-size:13px;
+max-width:370px;
+margin-top:20px
+}
+footer h4{
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:2px;
+margin-bottom:18px
+}
+footer ul{list-style:none}
+footer li{margin-bottom:9px}
+footer li a{
+color:var(--grey);
+font-size:13px;
+transition:.2s
+}
+footer li a:hover{color:var(--gold-light)}
+.footer-bottom{
+padding-top:25px;
+display:flex;
+justify-content:space-between;
+gap:30px;
+font-size:11px;
+color:#687074
+}
+
+.reveal{
+opacity:0;
+transform:translateY(25px);
+transition:.8s ease
+}
+.reveal.visible{
+opacity:1;
+transform:none
+}
+
+@media(max-width:1000px){
+nav ul{gap:14px}
+.intro-grid{grid-template-columns:1fr;gap:50px}
+.capability-grid{grid-template-columns:repeat(2,1fr)}
+.stats{grid-template-columns:repeat(2,1fr)}
+.footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:800px){
+.container{width:min(var(--max),calc(100% - 32px))}
+.menu-toggle{display:block}
+
+nav{
+display:none;
+position:absolute;
+top:82px;
+left:0;
+width:100%;
+background:rgba(7,9,10,.98);
+border-bottom:1px solid var(--border)
+}
+nav.open{display:block}
+nav ul{
+flex-direction:column;
+align-items:stretch;
+padding:20px;
+gap:0
+}
+nav a{
+display:block;
+padding:14px 5px;
+border-bottom:1px solid var(--border)
+}
+.nav-cta{
+margin-top:10px;
+text-align:center
+}
+
+.hero{
+min-height:720px;
+padding-bottom:130px
+}
+.hero-strip{grid-template-columns:repeat(2,1fr)}
+.hero-strip div{padding:12px}
+
+.industry-grid{grid-template-columns:1fr}
+.cta-box{
+padding:35px 25px;
+flex-direction:column;
+align-items:flex-start
+}
+}
+
+@media(max-width:600px){
+section{padding:80px 0}
+.section-head{
+display:block;
+margin-bottom:40px
+}
+.section-head p{margin-top:20px}
+h1{
+font-size:48px;
+letter-spacing:-2.5px
+}
+.hero p{font-size:16px}
+.industry-card{min-height:420px}
+.capability-grid{grid-template-columns:1fr}
+.stats{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr}
+.footer-bottom{flex-direction:column}
+}
+</style>
+</head>
+
+<body>
+
+<header id="header">
+<div class="container nav">
+
+<a href="index.html" class="brand">
+<div class="brand-mark">M</div>
+<div class="brand-name">
+MERIDIAN
+<span>ENERGY MANAGEMENT</span>
+</div>
+</a>
+
+<button class="menu-toggle" id="menuToggle">☰</button>
+
+<nav id="mainNav">
+<ul>
+<li><a href="about.html">About</a></li>
+<li><a href="solutions.html">Solutions</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="industries.html" class="active">Industries</a></li>
+<li><a href="process.html">Process</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="quote.html" class="nav-cta">Request a Quote</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+
+<section class="hero">
+
+<div class="container hero-content reveal">
+
+<div class="eyebrow">Industries • Energy Procurement</div>
+
+<h1>
+Energy that keeps<br>
+<strong>industry moving.</strong>
+</h1>
+
+<p>
+From mines and commercial fleets to aviation, agriculture and
+industrial operations, Meridian helps businesses navigate the
+complexities of energy procurement and supply.
+</p>
+
+</div>
+
+<div class="hero-bottom">
+<div class="container hero-strip">
+<div>Mining</div>
+<div>Logistics</div>
+<div>Industrial</div>
+<div>Energy Intensive Operations</div>
+</div>
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container intro-grid">
+
+<div class="reveal">
+
+<div class="eyebrow">Sector Expertise</div>
+
+<h2 class="intro-title">
+Different industries.<br>
+Different requirements.<br>
+<span>One procurement partner.</span>
+</h2>
+
+</div>
+
+<div class="intro-copy reveal">
+
+<p>
+Every industry consumes energy differently. Volume, specification,
+delivery frequency, operating environment and logistics can all
+change the economics of a supply requirement.
+</p>
+
+<p>
+Meridian works to understand the operational requirement before
+matching it to appropriate products, supply channels and delivery
+structures.
+</p>
+
+<p>
+Our objective is simple: make energy procurement more informed,
+more efficient and easier to manage.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+<div class="eyebrow">Industries We Serve</div>
+<h2>Built around the realities of your operation.</h2>
+</div>
+
+<p>
+Our energy procurement capabilities can support a broad range
+of commercial and industrial requirements across Southern Africa
+and international supply markets.
+</p>
+
+</div>
+
+
+<div class="industry-grid">
+
+
+<article class="industry-card mining reveal">
+
+<div class="industry-number">01 / MINING</div>
+
+<div class="industry-content">
+
+<h3>Mining Operations</h3>
+
+<p>
+Fuel is fundamental to mining. Meridian supports procurement
+requirements for heavy equipment, haulage fleets, generators
+and other energy-intensive operations.
+</p>
+
+<div class="industry-tags">
+<span>Diesel</span>
+<span>Bulk Fuel</span>
+<span>Heavy Equipment</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="industry-card logistics reveal">
+
+<div class="industry-number">02 / LOGISTICS</div>
+
+<div class="industry-content">
+
+<h3>Logistics &amp; Transport</h3>
+
+<p>
+Commercial fleets depend on reliable fuel availability.
+We support procurement requirements across road transport,
+distribution and fleet operations.
+</p>
+
+<div class="industry-tags">
+<span>EN590</span>
+<span>Fleet Fuel</span>
+<span>Transport</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="industry-card agriculture reveal">
+
+<div class="industry-number">03 / AGRICULTURE</div>
+
+<div class="industry-content">
+
+<h3>Agriculture</h3>
+
+<p>
+From farming machinery and irrigation to bulk operational
+requirements, Meridian helps agricultural businesses assess
+appropriate energy supply solutions.
+</p>
+
+<div class="industry-tags">
+<span>Diesel</span>
+<span>Machinery</span>
+<span>Bulk Supply</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="industry-card industrial reveal">
+
+<div class="industry-number">04 / INDUSTRIAL</div>
+
+<div class="industry-content">
+
+<h3>Industrial &amp; Manufacturing</h3>
+
+<p>
+Energy-intensive production requires predictable supply.
+We assist industrial clients with refined products and
+broader procurement requirements.
+</p>
+
+<div class="industry-tags">
+<span>Fuel Oil</span>
+<span>Diesel</span>
+<span>Gas</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="industry-card aviation reveal">
+
+<div class="industry-number">05 / AVIATION</div>
+
+<div class="industry-content">
+
+<h3>Aviation</h3>
+
+<p>
+Aviation fuel procurement requires careful attention to
+product specification, destination, documentation and
+supply coordination.
+</p>
+
+<div class="industry-tags">
+<span>Jet A1</span>
+<span>Aviation Fuel</span>
+<span>Supply</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="industry-card maritime reveal">
+
+<div class="industry-number">06 / MARITIME</div>
+
+<div class="industry-content">
+
+<h3>Maritime</h3>
+
+<p>
+Meridian supports maritime and port-related energy requirements
+through strategic sourcing and supply coordination.
+</p>
+
+<div class="industry-tags">
+<span>Marine Fuel</span>
+<span>Diesel</span>
+<span>Port Supply</span>
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="dark-section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+<div class="eyebrow">What We Consider</div>
+<h2>Procurement begins with understanding the operation.</h2>
+</div>
+
+<p>
+A commodity is only one part of a successful energy transaction.
+We look at the wider requirement before developing the procurement route.
+</p>
+
+</div>
+
+
+<div class="capability-grid">
+
+<div class="capability reveal">
+<div class="capability-number">01</div>
+<h3>Consumption</h3>
+<p>
+Current and projected fuel or energy consumption helps establish
+the appropriate procurement scale and frequency.
+</p>
+</div>
+
+<div class="capability reveal">
+<div class="capability-number">02</div>
+<h3>Specification</h3>
+<p>
+Product specifications and quality requirements are assessed
+before appropriate supply options are considered.
+</p>
+</div>
+
+<div class="capability reveal">
+<div class="capability-number">03</div>
+<h3>Destination</h3>
+<p>
+Delivery location can materially influence sourcing, logistics
+and the overall commercial structure.
+</p>
+</div>
+
+<div class="capability reveal">
+<div class="capability-number">04</div>
+<h3>Timeline</h3>
+<p>
+Urgent, spot and recurring requirements can require different
+procurement approaches.
+</p>
+</div>
+
+<div class="capability reveal">
+<div class="capability-number">05</div>
+<h3>Logistics</h3>
+<p>
+Transportation, storage and delivery considerations are factored
+into the broader supply requirement.
+</p>
+</div>
+
+<div class="capability reveal">
+<div class="capability-number">06</div>
+<h3>Commercial Structure</h3>
+<p>
+Transaction requirements and commercial expectations are considered
+when structuring the procurement route.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+<div class="eyebrow">Meridian Advantage</div>
+<h2>A broader view of energy procurement.</h2>
+</div>
+
+<p>
+Our approach combines international sourcing capability with
+an understanding of the requirements facing businesses operating
+in Southern Africa.
+</p>
+
+</div>
+
+
+<div class="stats">
+
+<div class="stat reveal">
+<strong>01</strong>
+<span>Strategic Procurement</span>
+</div>
+
+<div class="stat reveal">
+<strong>02</strong>
+<span>Global Supplier Networks</span>
+</div>
+
+<div class="stat reveal">
+<strong>03</strong>
+<span>Commercial Support</span>
+</div>
+
+<div class="stat reveal">
+<strong>04</strong>
+<span>Delivery Coordination</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box reveal">
+
+<div>
+
+<div class="eyebrow">Have An Energy Requirement?</div>
+
+<h2>
+Let's understand what your operation needs.
+</h2>
+
+<p>
+Tell us the product, volume, destination and required timeline.
+We'll assess the procurement requirement and identify the
+appropriate next step.
+</p>
+
+</div>
+
+<a href="quote.html" class="button primary">
+Request a Quote →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-brand">
+
+<a href="index.html" class="brand">
+<div class="brand-mark">M</div>
+<div class="brand-name">
+MERIDIAN
+<span>ENERGY MANAGEMENT</span>
+</div>
+</a>
+
+<p>
+Strategic energy procurement and supply solutions connecting
+qualified buyers with established global energy markets.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Company</h4>
+
+<ul>
+<li><a href="about.html">About Meridian</a></li>
+<li><a href="solutions.html">Solutions</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="process.html">Our Process</a></li>
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Industries</h4>
+
+<ul>
+<li><a href="industries.html">Mining</a></li>
+<li><a href="industries.html">Logistics &amp; Transport</a></li>
+<li><a href="industries.html">Agriculture</a></li>
+<li><a href="industries.html">Industrial</a></li>
+<li><a href="industries.html">Aviation</a></li>
+<li><a href="industries.html">Maritime</a></li>
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Contact</h4>
+
+<ul>
+<li><a href="tel:0847345588">084 734 5588</a></li>
+<li><a href="mailto:trading@meridianenergymanagement.com">trading@meridianenergymanagement.com</a></li>
+<li>106 Adderley Street</li>
+<li>Cape Town, South Africa</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<div>
+© <span id="year"></span> Meridian Energy Management. All rights reserved.
+</div>
+
+<div>
+<a href="privacy.html">Privacy</a>
+&nbsp; / &nbsp;
+<a href="terms.html">Terms</a>
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+const header=document.getElementById("header");
+
+window.addEventListener("scroll",()=>{
+if(window.scrollY>30){
+header.classList.add("scrolled");
+}else{
+header.classList.remove("scrolled");
+}
+});
+
+const menuToggle=document.getElementById("menuToggle");
+const mainNav=document.getElementById("mainNav");
+
+menuToggle.addEventListener("click",()=>{
+mainNav.classList.toggle("open");
+});
+
+document.querySelectorAll("#mainNav a").forEach(link=>{
+link.addEventListener("click",()=>{
+mainNav.classList.remove("open");
+});
+});
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+observer.unobserve(entry.target);
+}
+});
+},{threshold:.12});
+
+document.querySelectorAll(".reveal").forEach(el=>{
+observer.observe(el);
+});
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
